@@ -1,0 +1,5 @@
+interrupt_handlers.c:19:6:NMI_Handler	8	static
+interrupt_handlers.c:33:6:HardFault_Handler	8	static
+interrupt_handlers.c:43:6:SVC_Handler	8	static
+interrupt_handlers.c:49:6:PendSV_Handler	8	static
+interrupt_handlers.c:55:6:SysTick_Handler	8	static

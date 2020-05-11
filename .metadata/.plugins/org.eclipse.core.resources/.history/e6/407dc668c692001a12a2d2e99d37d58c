@@ -1,0 +1,80 @@
+/**
+ * @author  Андрей Заостровных
+ * @email   megalloid@mail.ru
+ * @website http://smarthouseautomatics.ru/stm32/stm32f0xx/utils
+ * @version v0.1
+ * @ide     STM32CubeIDE
+ * @brief   Код утилит разного рода
+ */
+
+#include "my_stm32f0xx_utils.h"
+
+/* Вариант с передачей указателя в котором хранится адрес регистра */
+MY_Result_t MY_UTILS_SetBitWithRead(__IO uint32_t *SetToRegister, uint32_t Value)
+{
+	uint32_t tmpreg;
+
+	do {
+		*SetToRegister |= Value;
+
+		/* Читаем для проверки */
+		tmpreg = *SetToRegister & Value;
+
+		if(Value == tmpreg)
+		{
+			return MY_Result_Ok;
+		}
+		else
+		{
+		return MY_Result_Error;
+		}
+    }
+	while(0);
+}
+
+
+/* Вариант с прямой передачей адреса регистра в виде числа*/
+MY_Result_t MY_UTILS_SetBitWithReadToAddress(uint32_t SetToRegister, uint32_t Value)
+{
+	__IO uint32_t tmpreg;
+	__IO uint32_t * register_address = (uint32_t *)SetToRegister;
+
+	do {
+		*(__IO uint32_t *)register_address |= Value;
+
+		/* Читаем для проверки */
+		tmpreg = *(__IO uint32_t *)register_address & Value;
+
+		if(Value == tmpreg)
+		{
+			return MY_Result_Ok;
+		}
+		else
+		{
+			return MY_Result_Error;
+		}
+    }
+	while(0);
+}
+
+
+uint16_t MY_UTILS_SwapBytes2(const uint16_t bytes)
+{
+	return ((bytes >> 8) & 0x00FF) | ((bytes << 8) & 0xFF00);
+}
+
+
+uint32_t MY_UTILS_SwapBytes4(uint32_t bytes, uint8_t forModbus)
+{
+	if (!forModbus)
+	{
+		bytes = (bytes & 0x0000FFFF) << 16 | (bytes & 0xFFFF0000) >> 16;
+	}
+	else
+	{
+		bytes = (bytes & 0x00FF00FF) << 8 | (bytes & 0xFF00FF00) >> 8;
+	}
+
+	return bytes;
+}
+

@@ -1,0 +1,186 @@
+/**
+ * @author  Andrey Zaostrovnykh
+ * @email   megalloid@mail.ru
+ * @website http://smarthouseautomatics.ru/stm32/stm32f0xx/utils
+ * @version v0.1
+ * @ide     STM32CubeIDE
+ * @brief   Полезные макросы и функции
+ */
+
+#ifndef MY_STM32F0xx_UTILS_H
+	#define MY_STM32F0xx_UTILS_H 100
+
+	/* C++ detection */
+	#ifdef __cplusplus
+		extern "C"
+		{
+	#endif
+
+	/**
+	 * @addtogroup MY_STM32F0xx_Libraries
+	 * @{
+	 */
+		/**
+		 * @defgroup MY_HAL_UTILS
+		 * @brief
+		 *	@{
+		 */
+
+			/* Подключаем основные файлы библиотек и настройки проекта*/
+			#include "main.h"
+			#include "my_stm32f0xx.h"
+
+			/**
+			 * @defgroup MY_UTILS_Defines
+			 * @brief    Библиотечные констатны
+			 * @{
+			 */
+
+
+			/**
+			 * @} MY_UTILS_Defines
+			 */
+
+
+			/**
+			 * @defgroup MY_UTILS_Macros
+			 * @brief    Библиотечные макросы
+			 * @{
+			 */
+
+				/**
+				 * @brief Битовые операции
+				 */
+				#define BIT_READ(value, bit) 						(((value) >> 	(bit)) & 0x01)
+
+				#define BIT_SET(value, bit) 		 				((value) |= 	(1UL << (bit)))
+
+				#define BIT_CLEAR(value, bit) 	 					((value) &= ~(1UL << (bit)))
+
+				#define BIT_TOGGLE(target, bit) 					((target) ^= (1UL << (bit)))
+
+				#define BIT_CHECK(target, bit) 						((target) & (1UL << (bit)))
+
+				#define IS_BIT_SET(REG, BIT)         				(((REG) & (BIT)) != RESET)
+
+				#define IS_BIT_CLR(REG, BIT)         				(((REG) & (BIT)) == RESET)
+
+
+				/**
+				 * @brief Операции с битовыми масками
+				 */
+				#define BITMASK_SET(target, mask) 					((target) |= (mask))
+
+				#define BITMASK_CLEAR(target, mask) 				((target) &= (~(mask)))
+
+				#define BITMASK_TOGGLE(target, mask) 				((target) ^= (mask))
+
+				#define BITMASK_CHECK(target, mask) 				((target) & (mask))
+
+
+				/**
+				 * @brief 	Host to Network Short (2 byte)
+				 * @note	Host - little endian (STM32), Network - big endian (STM8)
+				 */
+				#define htons(x) 									(((x)<< 8 & 0xFF00) | \
+																	 ((x)>> 8 & 0x00FF) )
+
+				#define ntohs(x) 									htons(x)
+
+
+				/**
+				 * @brief 	Host To Network Long (4 byte)
+				 * @note	Host - little endian (STM32), Network - big endian (STM8)
+				 */
+				#define htonl(x) 									(((x)<<24 & 0xFF000000UL) | \
+																	 ((x)<< 8 & 0x00FF0000UL) | \
+																	 ((x)>> 8 & 0x0000FF00UL) | \
+																	 ((x)>>24 & 0x000000FFUL) )
+
+				#define ntohl(x) 									htonl(x)
+
+
+				/**
+				 * @brief Определение максимального числа
+				 */
+				#define MAX(a, b) 									(a > b ? a : b)
+
+
+				/**
+				 * @brief Фиктивная операция
+				 */
+				#define UNUSED(x) 									((void)(x))
+
+			/**
+			 * @}  MY_UTILS_Macros
+			 */
+
+
+			/**
+			 * @defgroup MY_UTILS_Typedefs
+			 * @brief    Typedefs для библиотеки
+			 * @{
+			 */
+
+			/**
+			 * @} MY_UTILS_Typedefs
+			 */
+
+
+			/**
+			* @defgroup MY_UTILS_Functions
+			* @brief    Функции используемые в библиотеке
+			* @{
+			*/
+				/** @brief  Установка значения регистра по указателю с последующим чтением и проверкой
+				* @param	@arg SetToRegister - указатель на адрес регистра, в который необходимо осуществить запись
+				* @param 	@arg Value - значение для установки в регистре
+				* @retval @arg MY_Result_Ok    - значение успешно установлено и проверено
+				*					@arg MY_Result_Error - ошибка при записи
+				* @example MY_UTILS_SetBitWithRead(&RCC->APB1ENR, RCC_APB1ENR_USART2EN);
+				*/
+				MY_Result_t MY_UTILS_SetBitWithRead(__IO uint32_t *SetToRegister, uint32_t Value);
+
+
+				/** @brief  Установка значения регистра по адресу с последующим чтением и проверкой
+				* @param	@arg SetToRegister - адрес регистра в  32-битном виде, в который нужно сделать запись
+				* @param 	@arg Value - значение для записи
+				* @retval @arg MY_Result_Ok    - значение успешно установлено и проверено
+				*					@arg MY_Result_Error - ошибка при записи
+				* @example MY_UTILS_SetBitWithReadToAddress(REG_RCC_APB1ENR, RCC_APB1ENR_USART2EN);
+				*/
+				MY_Result_t MY_UTILS_SetBitWithReadToAddress(uint32_t SetToRegister, uint32_t Value);
+
+
+				/** @brief  Позволяет заменить 2 старших байтов младшими и наоборот
+				* @param	bytes - 16-байтное слово
+				* @retval Результат замены
+				*/
+				uint16_t MY_UTILS_SwapBytes2(const uint16_t bytes);
+
+
+				/** @brief  Позволяет заменить 4 старших байтов младшими и наоборот
+				* @param	bytes - 32-битное слово
+				* @param	forModbus - замена специально для Modbus
+				* @retval Результат замены
+				*/
+				uint32_t MY_UTILS_SwapBytes4(uint32_t bytes, uint8_t forModbus);
+
+			/**
+			* @} MY_UTILS_Functions
+			*/
+
+		/**
+		 * @} MY_HAL_UTILS
+		 */
+
+	/**
+	 * @} MY_STM32F0xx_Libraries
+	 */
+
+	/* C++ detection */
+	#ifdef __cplusplus
+		}
+	#endif
+
+#endif

@@ -1,0 +1,170 @@
+/**
+ * @author  Andrey Zaostrovnykh
+ * @email   megalloid@mail.ru
+ * @website http://smarthouseautomatics.ru/stm32/stm32f0xx/
+ * @version v0.1
+ * @ide     STM32CubeIDE
+ * @brief   Основной файл библиотеки
+ */
+
+#ifndef MY_STM32F0xx_H
+	#define MY_STM32F0xx_H 100
+
+	/* C++ detection */
+	#ifdef __cplusplus
+		extern "C"
+		{
+	#endif
+
+	/**
+	 * @addtogroup MY_STM32F0xx_Libraries
+	 * @{
+	 */
+		/**
+		 * @defgroup MY_HAL
+		 * @brief
+		 * @{
+		 */
+
+			/**
+			 * @defgroup MY_Includes
+			 * @brief    Основные файлы для подключения
+			 * @{
+			 */
+				/* Подключаем основные файлы библиотек и настройки проекта*/
+				#include "main.h"
+				#include <stdio.h>
+
+				/* Подключаем библиотеку CMSIS*/
+				/* STM32F0xx */
+				#if defined(STM32F0xx) || defined(STM32F0XX)
+					#include "stm32f0xx.h"
+				#endif
+
+			/**
+			 * @} MY_Settings
+			 */
+
+
+			/**
+			 * @defgroup MY_Settings
+			 * @brief    Библиотечные настройки
+			 * @{
+			 */
+				/*!< Значение напряжения питания VDD в mV */
+				#if !defined(VDD_VALUE)
+					#define	VDD_VALUE                    		3300U
+				#endif
+
+				/*!< Используется ли RealTime OS */
+				#if !defined(USE_RTOS)
+					#define	USE_RTOS                     		0U
+				#endif
+
+				/*!< Используется ли буфер предвыборки */
+				#if !defined(PREFETCH_ENABLE)
+					#define	PREFETCH_ENABLE              		1U
+				#endif
+
+				/*!< Используется ли кэш инструкций */
+				#if !defined(INSTRUCTION_CACHE_ENABLE)
+					#define	INSTRUCTION_CACHE_ENABLE     		0U
+				#endif
+
+				/*!< Используется ли кэш данных */
+				#if !defined(DATA_CACHE_ENABLE)
+					#define	DATA_CACHE_ENABLE            		0U
+				#endif
+
+				/*!< Максимальное значение задержки */
+				#if !defined(MAX_DELAY)
+					#define	MAX_DELAY      									0xFFFFFFFFU
+				#endif
+
+			/**
+			 * @} MY_Settings
+			 */
+
+
+			/**
+			 * @defgroup MY_Defines
+			 * @brief    Библиотечные констатны
+			 * @{
+			 */
+
+
+			/**
+			 * @} MY_Defines
+			 */
+
+
+			/**
+			 * @defgroup MY_Macros
+			 * @brief    Библиотечные макросы
+			 * @{
+			 */
+
+			/**
+			 * @}  MY_Macros
+			 */
+
+
+			/**
+			 * @defgroup MY_Typedefs
+			 * @brief    Typedefs для библиотеки
+			 * @{
+			 */
+				/**
+				 * @brief  Результаты вызова функций
+				 */
+				typedef enum
+				{
+					MY_Result_Ok       = 0x00U, /*!< Всё OK  */
+					MY_Result_Error    = 0x01U,	/*!< Ошибка  */
+					MY_Result_Busy     = 0x02U,	/*!< Объект для действия занят другим процессом  */
+					MY_Result_Timeout  = 0x03U	/*!< Таймаут доступа к объекту действия */
+				}
+				MY_Result_t;
+
+			/**
+			 * @} MY_Typedefs
+			 */
+
+
+			/**
+			 * @defgroup MY_Functions
+			 * @brief    Функции используемые в библиотеке
+			 * @{
+			 */
+				/** @brief  Стартовая инициализация микроконтроллера в соответствии с настройками
+				 * @retval @arg MY_Result_Ok      - всё прошло успешно
+				 *					@arg MY_Result_Error   - завершилось с ошибкой
+				 *					@arg MY_Result_Timeout - завершилось по таймауту
+				 */
+				MY_Result_t MY_System_Init(void);
+
+
+				/** @brief  Сброс всех примененных настроек к микроконтроллеру
+				 * @retval Нет
+				 */
+				void MY_System_DeInit(void);
+
+			/**
+			 * @} MY_Functions
+			 */
+
+		/**
+		 * @} MY_HAL
+		 */
+
+	/**
+	 * @} MY_STM32F0xx_Libraries
+	 */
+
+
+	/* C++ detection */
+	#ifdef __cplusplus
+		}
+	#endif
+
+#endif

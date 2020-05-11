@@ -1,0 +1,36 @@
+2019-10-14 18:44:13,062 [INFO] Activator:176 - 
+
+
+2019-10-14 18:44:13,065 [INFO] Activator:177 - !SESSION log4j initialized
+2019-10-14 18:44:41,781 [ERROR] LogOutputStream:181 - [STDERR_REDIRECT] log4j:WARN No appenders could be found for logger (com.st.components.util.ApplicationProperties).
+2019-10-14 18:44:41,782 [ERROR] LogOutputStream:181 - [STDERR_REDIRECT] log4j:WARN Please initialize the log4j system properly.
+2019-10-14 18:44:41,783 [ERROR] LogOutputStream:181 - [STDERR_REDIRECT] log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+2019-10-14 18:44:42,497 [ERROR] LogOutputStream:66 - [STDERR_REDIRECT] окт 14, 2019 6:44:42 PM java.util.prefs.FileSystemPreferences$1 run
+2019-10-14 18:44:42,497 [ERROR] LogOutputStream:66 - [STDERR_REDIRECT] INFO: Created user preferences directory.
+2019-10-14 18:44:42,498 [ERROR] LogOutputStream:66 - [STDERR_REDIRECT] 
+2019-10-14 18:44:44,510 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-10-14 18:46:12,935 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] withoutVersionV1.10.1
+2019-10-14 18:46:12,936 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] withoutVersionV1.10.0
+2019-10-14 18:59:57,749 [ERROR] LogOutputStream:66 - [STDERR_REDIRECT] 
+2020-05-03 02:09:02,077 [INFO] Activator:176 - 
+
+
+2020-05-03 02:09:02,079 [INFO] Activator:177 - !SESSION log4j initialized
+2020-05-03 14:34:04,544 [INFO] Activator:176 - 
+
+
+2020-05-03 14:34:04,547 [INFO] Activator:177 - !SESSION log4j initialized
+2020-05-10 12:46:47,502 [INFO] Activator:176 - 
+
+
+2020-05-10 12:46:47,505 [INFO] Activator:177 - !SESSION log4j initialized
+2020-05-10 12:50:17,415 [ERROR] LogOutputStream:66 - [STDERR_REDIRECT] swt-tree-arrow-mode and swt-tree-arrow-color are not supported on this platform
+2020-05-10 12:50:52,680 [INFO] Activator:176 - 
+
+
+2020-05-10 12:50:52,686 [INFO] Activator:177 - !SESSION log4j initialized
+2020-05-10 12:50:53,342 [ERROR] LogOutputStream:66 - [STDERR_REDIRECT] swt-tree-arrow-mode and swt-tree-arrow-color are not supported on this platform
+2020-05-10 12:51:49,514 [INFO] Activator:176 - 
+
+
+2020-05-10 12:51:49,516 [INFO] Activator:177 - !SESSION log4j initialized

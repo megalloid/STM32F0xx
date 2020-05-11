@@ -1,0 +1,139 @@
+/**
+ * @author  Андрей Заостровных
+ * @email   megalloid@mail.ru
+ * @website http://smarthouseautomatics.ru/stm32/stm32f0xx/
+ * @version v0.1
+ * @ide     STM32CubeIDE
+ * @brief   Код основного файла библиотеки
+ */
+
+#include "my_stm32f0xx.h"
+#include "my_stm32f0xx_utils.h"
+#include "my_stm32f0xx_cortex.h"
+#include "my_stm32f0xx_rcc.h"
+#include "my_stm32f0xx_gpio.h"
+
+MY_Result_t MY_System_Init(void)
+{
+		/* ##################### Сброс настроек тактирования в значения по умолчанию ##################### */
+
+		/* Устанавливаем бит HSION */
+		RCC->CR |= (uint32_t)0x00000001U;
+
+		#if defined (STM32F051x8) || defined (STM32F058x8)
+
+				/* Сброс бит SW[1:0], HPRE[3:0], PPRE[2:0], ADCPRE и MCOSEL[2:0] */
+				RCC->CFGR &= (uint32_t)0xF8FFB80CU;
+
+		#else
+
+				/* Сброс бит SW[1:0], HPRE[3:0], PPRE[2:0], ADCPRE, MCOSEL[2:0], MCOPRE[2:0], PLLNODIV */
+				RCC->CFGR &= (uint32_t)0x08FFB80CU;
+
+		#endif
+
+		/* Сброс бит HSEON, CSSON и PLLON */
+		RCC->CR &= (uint32_t)0xFEF6FFFFU;
+
+		/* Сброс бит HSEBYP */
+		RCC->CR &= (uint32_t)0xFFFBFFFFU;
+
+		/* Сброс бит PLLSRC, PLLXTPRE и PLLMUL[3:0] */
+		RCC->CFGR &= (uint32_t)0xFFC0FFFFU;
+
+		/* Сброс бит PREDIV[3:0] */
+		RCC->CFGR2 &= (uint32_t)0xFFFFFFF0U;
+
+		/* Сброс битов настроек тактирования периферии*/
+		#if defined (STM32F072xB) || defined (STM32F078xx)
+
+				/* Сброс бит USART2SW[1:0], USART1SW[1:0], I2C1SW, CECSW, USBSW, ADCSW */
+				RCC->CFGR3 &= (uint32_t)0xFFFCFE2CU;
+
+		#elif defined (STM32F071xB)
+
+				/* Сброс бит USART2SW[1:0], USART1SW[1:0], I2C1SW, CECSW, ADCSW */
+				RCC->CFGR3 &= (uint32_t)0xFFFFCEACU;
+
+		#elif defined (STM32F091xC) || defined (STM32F098xx)
+
+				/* Сброс бит USART3SW[1:0], USART2SW[1:0], USART1SW[1:0], I2C1SW, CECSW, ADCSW */
+				RCC->CFGR3 &= (uint32_t)0xFFF0FEACU;
+
+		#elif defined (STM32F030x6) || defined (STM32F030x8) || defined (STM32F031x6) || defined (STM32F038xx) || defined (STM32F030xC)
+
+				/* Сброс бит USART1SW[1:0], I2C1SW и ADCSW */
+				RCC->CFGR3 &= (uint32_t)0xFFFFFEECU;
+
+		#elif defined (STM32F051x8) || defined (STM32F058xx)
+
+				/* Сброс бит USART1SW[1:0], I2C1SW, CECSW и ADCSW */
+				RCC->CFGR3 &= (uint32_t)0xFFFFFEACU;
+
+		#elif defined (STM32F042x6) || defined (STM32F048xx)
+
+				/* Сброс бит USART1SW[1:0], I2C1SW, CECSW, USBSW и ADCSW */
+				RCC->CFGR3 &= (uint32_t)0xFFFFFE2CU;
+
+		#elif defined (STM32F070x6) || defined (STM32F070xB)
+
+				/* Сброс бит  USART1SW[1:0], I2C1SW, USBSW and ADCSW bits */
+				RCC->CFGR3 &= (uint32_t)0xFFFFFE6CU;
+
+				/* Установление по умолчанию тактирования USB к PLLCLK, без HSI48 */
+				RCC->CFGR3 |= (uint32_t)0x00000080U;
+
+		#else
+
+				#warning "No CPU model selected"
+
+		#endif
+
+		/* Сбрасываем бит HSI14 */
+		RCC->CR2 &= (uint32_t)0xFFFFFFFEU;
+
+		/* Отключаем все прерывания */
+		RCC->CIR = 0x00000000U;
+
+		/* Настраиваем Systick как основу для временных отсчётов и настраивает тик в 1ms (после сброса источник для тактирования - HSI) */
+		MY_SysTick_Init(MY_RCC_HCLK_GetFreq()/1000U, 0U);
+
+		/* Включаем тактирование на SYSCFG & COMP */
+		MY_UTILS_SetBitWithRead(&RCC->APB2ENR, RCC_APB2ENR_SYSCFGEN);
+
+		/* Включаем тактирование на блок управления питанием */
+		MY_UTILS_SetBitWithRead(&RCC->APB1ENR, RCC_APB1ENR_PWREN);
+
+		/* Устанавливаем приоритет прерывания SVC_IRQn (используется для работы ОС)*/
+		MY_NVIC_Priority_Set(SVC_IRQn, 0);
+
+		/* Устанавливаем приоритет прерывания PendSV_IRQn (используется для работы ОС)*/
+		MY_NVIC_Priority_Set(PendSV_IRQn, 0);
+
+
+		/* ##################### Инициализация системного тактирования  ##################### */
+
+		if(MY_RCC_System_Init() != MY_Result_Ok)
+		{
+				#ifdef STM32F0_DISCOVERY
+
+						/* Аварийная индикация */
+						MY_GPIO_Init(GPIOC, GPIO_PIN_8 | GPIO_PIN_9, MY_GPIO_Mode_Out, MY_GPIO_OType_PP, MY_GPIO_PuPd_NoPull, MY_GPIO_Speed_High);
+						MY_GPIO_SetPinHigh(GPIOC, GPIO_PIN_8 | GPIO_PIN_9);
+
+				#endif
+
+				return MY_Result_Error;
+		}
+		else
+		{
+				return MY_Result_Ok;
+		}
+}
+
+
+void MY_System_DeInit(void)
+{
+
+}
+

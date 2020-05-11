@@ -1,0 +1,13 @@
+/*
+ * my_stm32f0xx_i2c.h
+ *
+ *  Created on: 11 мая 2020 г.
+ *      Author: megalloid
+ */
+
+#ifndef MY_INC_MY_STM32F0XX_I2C_H_
+#define MY_INC_MY_STM32F0XX_I2C_H_
+
+
+
+#endif /* MY_INC_MY_STM32F0XX_I2C_H_ */

@@ -1,0 +1,66 @@
+/**
+	* @author  Andrey Zaostrovnykh
+	* @email   megalloid@mail.ru
+	* @website http://smarthouseautomatics.ru/stm32/stm32f0xx/
+	* @version v0.1
+  * @ide     Keil uVision
+  * @brief   Этот файл содержит заголовки функций для обработчиков прерываний
+	*/
+
+
+#include "interrupt_handlers.h"
+#include "my_stm32f0xx_rcc.h"
+#include "my_stm32f0xx_cortex.h"
+
+/******************************************************************************/
+/*            Cortex-M0 Processor Exceptions Handlers                         */
+/******************************************************************************/
+
+
+void NMI_Handler(void)
+{
+		/* Check RCC CSS flag */
+		if(MY_RCC_GET_IT(RCC_IT_CSS))
+		{
+				/* RCC Clock Security System interrupt user callback */
+				/*<! User code here > */
+
+				/* Clear RCC CSS pending bit */
+				MY_RCC_CLEAR_IT(RCC_IT_CSS);
+		}
+}
+
+
+void HardFault_Handler(void)
+{
+		/* Go to infinite loop when Hard Fault exception occurs */
+		while (1)
+		{
+
+		}
+}
+
+
+void SVC_Handler(void)
+{
+
+}
+
+
+void PendSV_Handler(void)
+{
+
+}
+
+
+void SysTick_Handler(void)
+{
+		MY_SysTick_IncTick();
+}
+
+
+void TIM1_BRK_UP_TRG_COM_IRQHandler(void)
+{
+    MY_GPIO_TogglePinValue(GPIOC, GPIO_PIN_8);
+    TIM1->SR &= ~ TIM_SR_UIF;
+}

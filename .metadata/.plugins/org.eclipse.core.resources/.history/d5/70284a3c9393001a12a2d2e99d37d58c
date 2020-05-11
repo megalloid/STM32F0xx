@@ -1,0 +1,10 @@
+/**
+ * @author  Andrey Zaostrovnykh
+ * @email   megalloid@mail.ru
+ * @website http://smarthouseautomatics.ru/stm32/stm32f0xx/cortex
+ * @version v0.1
+ * @ide     STM32CubeIDE
+ * @brief   Утилиты для работы с ядром Cortex-M0
+ */
+
+#include "my_stm32f0xx_cortex.h"

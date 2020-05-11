@@ -1,0 +1,14 @@
+22:44:19 **** Incremental Build of configuration Debug for project Template ****
+make -j8 all 
+arm-none-eabi-size   Template.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5268	     12	   1580	   6860	   1acc	Template.elf
+Finished building: default.size.stdout
+ 
+22:44:51 **** Incremental Build of configuration Debug for project Template ****
+make -j8 all 
+arm-none-eabi-size   Template.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5268	     12	   1580	   6860	   1acc	Template.elf
+Finished building: default.size.stdout
+ 

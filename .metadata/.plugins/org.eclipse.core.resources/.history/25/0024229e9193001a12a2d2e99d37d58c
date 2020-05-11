@@ -1,0 +1,24 @@
+#include "my_stm32f0xx.h"
+
+/* Тело основной программы */
+int main(void)
+{
+	GPIO_Init_t GPIO_Leds;
+	GPIO_Leds.Pin = GPIO_Pin_8 | GPIO_Pin_9;
+	GPIO_Leds.Mode = MY_GPIO_Mode_Out;
+	GPIO_Leds.Pull = MY_GPIO_PuPd_NoPull;
+	GPIO_Leds.Speed = MY_GPIO_Speed_High;
+
+	MY_GPIO_StructInit(GPIOC, &GPIO_Leds);
+
+	while(1)
+	{
+		/* Зажигаем светодиод PC8, гасим PC9 */
+
+		for (int i=0; i<500000; i++){}	// Искусственная задержка
+
+		/* Зажигаем светодиод PC9, гасим PC8 */
+
+		for (int i=0; i<500000; i++){}	// Искусственная задержка
+	}
+}

@@ -1,0 +1,104 @@
+/**
+ * @author  Andrey Zaostrovnykh
+ * @email   megalloid@mail.ru
+ * @website http://smarthouseautomatics.ru/stm32/stm32f0xx/delays
+ * @version v0.1
+ * @ide     STM32CubeIDE
+ * @brief   Утилиты для работы с I2C
+ */
+
+#ifndef MY_STM32F0xx_CORTEX_H
+	#define MY_STM32F0xx_CORTEX_H 100
+
+	/* C++ detection */
+	#ifdef __cplusplus
+		extern "C"
+		{
+	#endif
+
+	/**
+	 * @addtogroup MY_STM32F0xx_Libraries
+	 * @{
+	 */
+
+		/**
+		 * @defgroup MY_CORTEX
+		 * @brief
+		 *	@{
+		 */
+
+			/* Подключаем основные файлы библиотек и настройки проекта */
+			#include "main.h"
+			#include "my_stm32f0xx.h"
+
+			/**
+			 * @defgroup MY_CORTEX_Settings
+			 * @brief    Библиотечные настройки
+			 * @{
+			 */
+
+			/**
+			 * @} MY_CORTEX_Settings
+			 */
+
+
+			/**
+			 * @defgroup MY_CORTEX_Defines
+			 * @brief    Библиотечные константы
+			 * @{
+			 */
+
+
+			/**
+			 * @} MY_CORTEX_Defines
+			 */
+
+
+			/**
+			 * @defgroup MY_CORTEX_Macros
+			 * @brief    Библиотечные макросы
+			 * @{
+			 */
+
+			/**
+			 * @}  MY_CORTEX_Macros
+			 */
+
+
+			/**
+			 * @defgroup MY_CORTEX_Typedefs
+			 * @brief    Typedefs для библиотеки
+			 * @{
+			 */
+
+			/**
+			 * @} MY_CORTEX_Typedefs
+			 */
+
+
+			/**
+			 * @defgroup MY_CORTEX_Functions
+			 * @brief    Функции используемые в библиотеке
+			 * @{
+			 */
+
+
+
+			/**
+			 * @} MY_CORTEX_Functions
+			 */
+
+		/**
+		 * @} MY_CORTEX
+		 */
+
+	/**
+	 * @} MY_STM32F0xx_Libraries
+	 */
+
+	/* C++ detection */
+	#ifdef __cplusplus
+		}
+	#endif
+
+#endif

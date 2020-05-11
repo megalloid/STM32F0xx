@@ -1,0 +1,472 @@
+/**
+	* @author  Andrey Zaostrovnykh
+	* @email   megalloid@mail.ru
+	* @website http://smarthouseautomatics.ru/stm32/stm32f0xx/gpio
+	* @version v0.1
+  * @ide     Keil uVision
+  * @brief   Полезные макросы и функции
+	*/
+
+#include "my_stm32f0xx_gpio.h"
+
+
+/* Подсчёт занятых пинов на портах GPIO - их всего 5 */
+static uint16_t GPIO_UsedPins[5] = {0,0,0,0,0};
+
+/* Приватные функции */
+static void MY_GPIO_INT_Init(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, MY_GPIO_Mode_t GPIO_Mode, MY_GPIO_OType_t GPIO_OType, MY_GPIO_PuPd_t GPIO_PuPd, MY_GPIO_Speed_t GPIO_Speed);
+
+/* Основная часть с функциями*/
+void MY_GPIO_Init(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, MY_GPIO_Mode_t GPIO_Mode, MY_GPIO_OType_t GPIO_OType, MY_GPIO_PuPd_t GPIO_PuPd, MY_GPIO_Speed_t GPIO_Speed)
+{
+		/* Проверка указанных пинов на правильность */
+		if (GPIO_Pin == 0x00)
+		{
+				return;
+		}
+
+		/* Включаем тактирование для порта GPIO */
+		MY_GPIO_EnableClock(GPIOx);
+
+		/* Инициализируем */
+		MY_GPIO_INT_Init(GPIOx, GPIO_Pin, GPIO_Mode, GPIO_OType, GPIO_PuPd, GPIO_Speed);
+}
+
+
+
+void MY_GPIO_StructInit(GPIO_TypeDef* GPIOx, MY_GPIO_Init_t *GPIO_Init)
+{
+		uint32_t position = 0x00U;
+		uint32_t iocurrent = 0x00U;
+		uint32_t temp = 0x00U;
+
+		/* Включаем тактирование порта GPIO */
+		MY_GPIO_EnableClock(GPIOx);
+
+		/* Настраиваем пины */
+		while (((GPIO_Init->Pin) >> position) != RESET)
+		{
+				/* Get current io position */
+				iocurrent = (GPIO_Init->Pin) & (1U << position);
+
+				if(iocurrent)
+				{
+						/*--------------------- GPIO Mode Configuration ------------------------*/
+						/* In case of Alternate function mode selection */
+						if((GPIO_Init->Mode == GPIO_MODE_AF_PP) || \
+							 (GPIO_Init->Mode == GPIO_MODE_AF_OD))
+						{
+								/* Configure Alternate function mapped with the current IO */
+								temp = GPIOx->AFR[position >> 3];
+
+								CLEAR_BIT(temp, 0xFU << ((uint32_t)(position & 0x07U) * 4U)) ;
+								SET_BIT(temp, (uint32_t)(GPIO_Init->Alternate) << (((uint32_t)position & 0x07U) * 4U));
+
+								GPIOx->AFR[position >> 3U] = temp;
+						}
+
+
+						/* Configure IO Direction mode (Input, Output, Alternate or Analog) */
+						temp = GPIOx->MODER;
+
+						CLEAR_BIT(temp, GPIO_MODER_MODER0 << (position * 2U));
+						SET_BIT(temp, (GPIO_Init->Mode & GPIO_MODE) << (position * 2U));
+
+						GPIOx->MODER = temp;
+
+
+						/* In case of Output or Alternate function mode selection */
+						if ((GPIO_Init->Mode == GPIO_MODE_OUTPUT_PP) || \
+								(GPIO_Init->Mode == GPIO_MODE_AF_PP) || \
+								(GPIO_Init->Mode == GPIO_MODE_OUTPUT_OD) || \
+								(GPIO_Init->Mode == GPIO_MODE_AF_OD))
+						{
+								/* Configure the IO Speed */
+								temp = GPIOx->OSPEEDR;
+
+								CLEAR_BIT(temp, GPIO_OSPEEDER_OSPEEDR0 << (position * 2U));
+								SET_BIT(temp, GPIO_Init->Speed << (position * 2U));
+
+								GPIOx->OSPEEDR = temp;
+
+
+								/* Configure the IO Output Type */
+								temp = GPIOx->OTYPER;
+
+								CLEAR_BIT(temp, GPIO_OTYPER_OT_0 << position) ;
+								SET_BIT(temp, ((GPIO_Init->Mode & GPIO_OUTPUT_TYPE) >> 4U) << position);
+
+								GPIOx->OTYPER = temp;
+						}
+
+						/* Activate the Pull-up or Pull down resistor for the current IO */
+						temp = GPIOx->PUPDR;
+
+						CLEAR_BIT(temp, GPIO_PUPDR_PUPDR0 << (position * 2U));
+						SET_BIT(temp, (GPIO_Init->Pull) << (position * 2U));
+
+						GPIOx->PUPDR = temp;
+
+
+						/*--------------------- EXTI Mode Configuration ------------------------*/
+						/* Configure the External Interrupt or event for the current IO */
+						if((GPIO_Init->Mode & EXTI_MODE) == EXTI_MODE)
+						{
+								MY_RCC_SYSCFG_CLK_ENABLE();
+
+
+								temp = SYSCFG->EXTICR[position >> 2];
+
+								CLEAR_BIT(temp, (0x0FU) << (4U * (position & 0x03U)));
+								SET_BIT(temp, (GPIO_GET_INDEX(GPIOx)) << (4U * (position & 0x03U)));
+
+								SYSCFG->EXTICR[position >> 2] = temp;
+
+
+								/* Clear EXTI line configuration */
+								temp = EXTI->IMR;
+
+								CLEAR_BIT(temp, (uint32_t)iocurrent);
+
+								if((GPIO_Init->Mode & GPIO_MODE_IT) == GPIO_MODE_IT)
+								{
+									SET_BIT(temp, iocurrent);
+								}
+
+								EXTI->IMR = temp;
+
+
+								temp = EXTI->EMR;
+
+								CLEAR_BIT(temp, (uint32_t)iocurrent);
+
+								if((GPIO_Init->Mode & GPIO_MODE_EVT) == GPIO_MODE_EVT)
+								{
+									SET_BIT(temp, iocurrent);
+								}
+
+								EXTI->EMR = temp;
+
+
+								/* Clear Rising Falling edge configuration */
+								temp = EXTI->RTSR;
+
+								CLEAR_BIT(temp, (uint32_t)iocurrent);
+
+								if((GPIO_Init->Mode & RISING_EDGE) == RISING_EDGE)
+								{
+									SET_BIT(temp, iocurrent);
+								}
+
+								EXTI->RTSR = temp;
+
+
+								temp = EXTI->FTSR;
+
+								CLEAR_BIT(temp, (uint32_t)iocurrent);
+
+								if((GPIO_Init->Mode & FALLING_EDGE) == FALLING_EDGE)
+								{
+									SET_BIT(temp, iocurrent);
+								}
+
+								EXTI->FTSR = temp;
+						}
+				}
+
+				position++;
+		}
+}
+
+
+void MY_GPIO_InitAlternate(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, MY_GPIO_OType_t GPIO_OType, MY_GPIO_PuPd_t GPIO_PuPd, MY_GPIO_Speed_t GPIO_Speed, uint8_t Alternate)
+{
+		uint32_t pinpos;
+
+		/* Проверяем выбран ли пин */
+		if (GPIO_Pin == 0x00)
+		{
+				return;
+		}
+
+		/* Включаем тактирование для порта GPIO */
+		MY_GPIO_EnableClock(GPIOx);
+
+		/* Устанавливаем альтернативную функцию проходом через все пины */
+		for (pinpos = 0; pinpos < 0x10; pinpos++)
+		{
+				/* Если пин не находится в списке инициализируемых - пропускаем итерацию */
+				if ((GPIO_Pin & (1 << pinpos)) == 0)
+				{
+						continue;
+				}
+
+				/* Установка альтернативной функции */
+				GPIOx->AFR[pinpos >> 0x03] = (GPIOx->AFR[pinpos >> 0x03] & ~(0x0F << (4 * (pinpos & 0x07)))) | (Alternate << (4 * (pinpos & 0x07)));
+		}
+
+		/* Инициализируем так же основные функции GPIO-портов */
+		MY_GPIO_INT_Init(GPIOx, GPIO_Pin, MY_GPIO_Mode_AF, GPIO_OType, GPIO_PuPd, GPIO_Speed);
+}
+
+
+void MY_GPIO_DeInit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+{
+		uint8_t i;
+		uint8_t ptr = MY_GPIO_GetPortSource(GPIOx);
+
+		/* Делаем проход в цикле через все 16 (0x10) пинов */
+		for (i = 0x00; i < 0x10; i++)
+		{
+				if (GPIO_Pin & (1 << i))
+				{
+						/* Устанавливаем биты 11 для переключения в analog mode */
+						GPIOx->MODER |= (0x03 << (2 * i));
+
+						/* Убираем из списка задействованых деинициализированные пины */
+						GPIO_UsedPins[ptr] &= ~(1 << i);
+				}
+		}
+}
+
+
+void MY_GPIO_WritePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, MY_GPIO_PinState PinState)
+{
+		if (PinState != MY_GPIO_Pin_Reset)
+		{
+				GPIOx->BSRR = (uint32_t)GPIO_Pin;
+		}
+		else
+		{
+				GPIOx->BRR = (uint32_t)GPIO_Pin;
+		}
+}
+
+
+void MY_GPIO_TogglePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+{
+		GPIOx->ODR ^= GPIO_Pin;
+}
+
+
+void MY_GPIO_SetPinAsInput(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+{
+		uint8_t i;
+
+		/* Делаем проход в цикле через все 16 (0x10) пинов */
+		for (i = 0x00; i < 0x10; i++)
+		{
+				if (GPIO_Pin & (1 << i))
+				{
+						/* Устанавливаем биты 00 для переключения в режим input */
+						GPIOx->MODER &= ~(0x03 << (2 * i));
+				}
+		}
+}
+
+
+void MY_GPIO_SetPinAsOutput(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+{
+		uint8_t i;
+
+		/* Делаем проход в цикле через все 16 (0x10) пинов */
+		for (i = 0x00; i < 0x10; i++)
+		{
+				if (GPIO_Pin & (1 << i))
+				{
+						/* Устанавливаем биты 01 для переключения в режим output */
+						GPIOx->MODER = (GPIOx->MODER & ~(0x03 << (2 * i))) | (0x01 << (2 * i));
+				}
+		}
+}
+
+
+void MY_GPIO_SetPinAsAnalog(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+{
+		uint8_t i;
+
+		/* Делаем проход в цикле через все 16 (0x10) пинов */
+		for (i = 0x00; i < 0x10; i++)
+		{
+				if (GPIO_Pin & (1 << i))
+				{
+						/* Устанавливаем биты 11 для переключения в режим analog */
+						GPIOx->MODER |= (0x03 << (2 * i));
+				}
+		}
+}
+
+
+void MY_GPIO_SetPinAsAlternate(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+{
+		uint8_t i;
+
+		/* Делаем проход в цикле через все 16 (0x10) пинов */
+		for (i = 0; i < 0x10; i++)
+		{
+				if ((GPIO_Pin & (1 << i)) == 0)
+				{
+						continue;
+				}
+
+				/* Устанавливаем alternate mode */
+				GPIOx->MODER = (GPIOx->MODER & ~(0x03 << (2 * i))) | (0x02 << (2 * i));
+		}
+}
+
+
+void MY_GPIO_SetPullResistor(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, MY_GPIO_PuPd_t GPIO_PuPd)
+{
+		uint8_t pinpos;
+
+		/* Делаем проход в цикле через все 16 (0x10) пинов */
+		for (pinpos = 0; pinpos < 0x10; pinpos++)
+		{
+				if ((GPIO_Pin & (1 << pinpos)) == 0)
+				{
+						continue;
+				}
+
+				/* Устанавливаем GPIO PUPD регистр */
+				GPIOx->PUPDR = (GPIOx->PUPDR & ~(0x03 << (2 * pinpos))) | ((uint32_t)(GPIO_PuPd << (2 * pinpos)));
+		}
+}
+
+
+void MY_GPIO_EnableClock(GPIO_TypeDef* GPIOx)
+{
+		__IO uint32_t tmpreg;
+
+		/* Устанавливает бит в позиции [RCC_AHBENR]
+		   Порты перечисляются с 17 бита и перечисляются по 22
+	     1 << номер порта + 17 (позиция первого - GPIOA) */
+		RCC->AHBENR |= (1 << (MY_GPIO_GetPortSource(GPIOx) + 17));
+
+		tmpreg = READ_BIT(RCC->AHBENR, (1 << (MY_GPIO_GetPortSource(GPIOx) + 17)));
+
+    ((void)(tmpreg));
+}
+
+
+void MY_GPIO_DisableClock(GPIO_TypeDef* GPIOx)
+{
+		/* Снимает бит в позиции [RCC_AHBENR]
+		   Порты перечисляются с 17 бита и перечисляются по 22
+	     1 << номер порта + 17 (позиция первого - GPIOA) */
+		RCC->AHBENR &= ~(1 << (MY_GPIO_GetPortSource(GPIOx) + 17));
+}
+
+
+uint16_t MY_GPIO_GetPortSource(GPIO_TypeDef* GPIOx)
+{
+		/* Получаем номер порта */
+		/* Смещение от порта GPIOA = Разница в адресах 2 GPIO */
+		return ((uint32_t)GPIOx - (GPIOA_BASE)) / ((GPIOB_BASE) - (GPIOA_BASE));
+}
+
+
+uint16_t MY_GPIO_GetPinSource(uint16_t GPIO_Pin)
+{
+		uint16_t pinsource = 0;
+
+		/* Получаем порядковый номер */
+		while (GPIO_Pin > 1)
+		{
+				/* Прибавляем значение */
+				pinsource++;
+
+				/* Сдвигаем вправо на единицу */
+				GPIO_Pin >>= 1;
+		}
+
+		/* Возвращаем результат */
+		return pinsource;
+}
+
+
+
+uint16_t MY_GPIO_GetUsedPins(GPIO_TypeDef* GPIOx)
+{
+		/* Возвращаем задействованные порты */
+		return GPIO_UsedPins[MY_GPIO_GetPortSource(GPIOx)];
+}
+
+
+uint16_t MY_GPIO_GetFreePins(GPIO_TypeDef* GPIOx)
+{
+		/* Возвращаем свободные порты */
+		return ~GPIO_UsedPins[MY_GPIO_GetPortSource(GPIOx)];
+}
+
+
+MY_Result_t MY_GPIO_Lock(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+{
+		__IO uint32_t tmp = GPIO_LCKR_LCKK;
+
+		/* Apply lock key write sequence */
+		SET_BIT(tmp, GPIO_Pin);
+
+		/* Set LCKx bit(s): LCKK='1' + LCK[15-0] */
+		GPIOx->LCKR = tmp;
+
+		/* Reset LCKx bit(s): LCKK='0' + LCK[15-0] */
+		GPIOx->LCKR = GPIO_Pin;
+
+		/* Set LCKx bit(s): LCKK='1' + LCK[15-0] */
+		GPIOx->LCKR = tmp;
+
+		/* Read LCKK bit*/
+		tmp = GPIOx->LCKR;
+		tmp = GPIOx->LCKR;
+
+		if((GPIOx->LCKR & GPIO_LCKR_LCKK) != RESET)
+		{
+				return MY_Result_Ok;
+		}
+		else
+		{
+				return MY_Result_Error;
+		}
+}
+
+
+
+
+
+/********************* Приватные функции ****************************/
+
+static void MY_GPIO_INT_Init(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, MY_GPIO_Mode_t GPIO_Mode, MY_GPIO_OType_t GPIO_OType, MY_GPIO_PuPd_t GPIO_PuPd, MY_GPIO_Speed_t GPIO_Speed)
+{
+		uint8_t pinpos; //текущий номер пина в цикле инициализации
+		uint8_t ptr = MY_GPIO_GetPortSource(GPIOx); //вычисляем номер порта в котором идет инициализация
+
+		/* Делаем проход в цикле через все 16 (0x10) пинов */
+		for (pinpos = 0; pinpos < 0x10; pinpos++)
+		{
+				/* Если пин не находится в списке инициализируемых - пропускаем итерацию */
+				if ((GPIO_Pin & (1 << pinpos)) == 0)
+				{
+						continue;
+				}
+
+				/* Если пин в списке используемых */
+				GPIO_UsedPins[ptr] |= 1 << pinpos;
+
+				/* Настраиваем [GPIOx_PUPDR] */
+				GPIOx->PUPDR = (GPIOx->PUPDR & ~(0x03 << (2 * pinpos))) | ((uint32_t)(GPIO_PuPd << (2 * pinpos)));
+
+				/* Настраиваем [GPIOx_MODER] */
+				GPIOx->MODER = (GPIOx->MODER & ~((uint32_t)(0x03 << (2 * pinpos)))) | ((uint32_t)(GPIO_Mode << (2 * pinpos)));
+
+				/* Установка параметров только если режим Output или Alternate */
+				if (GPIO_Mode == MY_GPIO_Mode_Out || GPIO_Mode == MY_GPIO_Mode_AF)
+				{
+						/* Установка [GPIOx_OTYPER] */
+						GPIOx->OTYPER = (GPIOx->OTYPER & ~(uint16_t)(0x01 << pinpos)) | ((uint16_t)(GPIO_OType << pinpos));
+
+						/* Установка [GPIOx_OSPEEDR] */
+						GPIOx->OSPEEDR = (GPIOx->OSPEEDR & ~((uint32_t)(0x03 << (2 * pinpos)))) | ((uint32_t)(GPIO_Speed << (2 * pinpos)));
+				}
+		}
+}
+

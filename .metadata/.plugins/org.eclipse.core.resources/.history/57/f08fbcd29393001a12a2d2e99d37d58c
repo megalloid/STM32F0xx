@@ -1,0 +1,10 @@
+/**
+ * @author  Andrey Zaostrovnykh
+ * @email   megalloid@mail.ru
+ * @website http://smarthouseautomatics.ru/stm32/stm32f0xx/delays
+ * @version v0.1
+ * @ide     STM32CubeIDE
+ * @brief   Утилиты для работы с временными задержками
+ */
+
+#include "my_stm32f0xx_delay.h"
