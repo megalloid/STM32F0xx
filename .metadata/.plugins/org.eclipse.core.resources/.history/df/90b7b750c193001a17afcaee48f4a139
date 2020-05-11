@@ -25,10 +25,10 @@ int main(void)
 	{
 		/* Зажигаем светодиод PC8, гасим PC9 */
 		MY_GPIO_SetPinHigh(GPIOC, GPIO_Pin_9);
-		MY_Delay_ms(1000);
+		MY_Delay_ms(50);
 
 		/* Зажигаем светодиод PC9, гасим PC8 */
 		MY_GPIO_SetPinLow(GPIOC, GPIO_Pin_9);
-		MY_Delay_ms(1000);
+		MY_Delay_ms(50);
 	}
 }
