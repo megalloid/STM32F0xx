@@ -57,7 +57,7 @@
 
 		 (#) Включаем таткирование на GPIO AHB используя макрос из библиотеки RCC: MY_RCC_GPIOx_CLK_ENABLE().
 
-		 (#) Настроить пины GPIO используя MY_GPIO_Init() или MY_GPIO_StructInit()
+		 (#) Настроить пины GPIO используя прямую передачу параметров через MY_GPIO_Init() или через структуру MY_GPIO_StructInit()
 
 			(++) Настроить IO mode используя элемент "Mode" из структуры MY_GPIO_Init_t
 
