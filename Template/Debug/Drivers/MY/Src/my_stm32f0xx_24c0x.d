@@ -1,6 +1,6 @@
-Drivers/MY/Src/my_stm32f0xx_rcc.o: \
- /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Src/my_stm32f0xx_rcc.c \
- /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_rcc.h \
+Drivers/MY/Src/my_stm32f0xx_24c0x.o: \
+ /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Src/my_stm32f0xx_24c0x.c \
+ /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_delay.h \
  /home/megalloid/STM32CubeIDE/STM32F0xx/Template/Inc/main.h \
  /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx.h \
  /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/CMSIS/Inc/stm32f0xx.h \
@@ -10,12 +10,16 @@ Drivers/MY/Src/my_stm32f0xx_rcc.o: \
  /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/CMSIS/Inc/cmsis_gcc.h \
  /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/CMSIS/Inc/core_cmFunc.h \
  /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/CMSIS/Inc/system_stm32f0xx.h \
+ /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_i2c.h \
+ /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_gpio.h \
+ /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_rcc.h \
  /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_cortex.h \
  /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_utils.h \
- /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_gpio.h \
- /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_rcc.h
+ /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_24c0x.h \
+ /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_delay.h \
+ /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_i2c.h
 
-/home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_rcc.h:
+/home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_delay.h:
 
 /home/megalloid/STM32CubeIDE/STM32F0xx/Template/Inc/main.h:
 
@@ -35,10 +39,18 @@ Drivers/MY/Src/my_stm32f0xx_rcc.o: \
 
 /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/CMSIS/Inc/system_stm32f0xx.h:
 
-/home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_cortex.h:
-
-/home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_utils.h:
+/home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_i2c.h:
 
 /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_gpio.h:
 
 /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_rcc.h:
+
+/home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_cortex.h:
+
+/home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_utils.h:
+
+/home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_24c0x.h:
+
+/home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_delay.h:
+
+/home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_i2c.h:

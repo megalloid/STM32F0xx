@@ -13,7 +13,8 @@ Src/main.o: ../Src/main.c \
  /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_rcc.h \
  /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_cortex.h \
  /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_utils.h \
- /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_gpio.h
+ /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_gpio.h \
+ /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_delay.h
 
 /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx.h:
 
@@ -44,3 +45,5 @@ Src/main.o: ../Src/main.c \
 /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_utils.h:
 
 /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_gpio.h:
+
+/home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_delay.h:

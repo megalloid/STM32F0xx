@@ -1,6 +1,6 @@
-Drivers/MY/Src/my_stm32f0xx_cortex.o: \
- /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Src/my_stm32f0xx_cortex.c \
- /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_cortex.h \
+Drivers/MY/Src/my_stm32f0xx_dma.o: \
+ /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Src/my_stm32f0xx_dma.c \
+ /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_dma.h \
  /home/megalloid/STM32CubeIDE/STM32F0xx/Template/Inc/main.h \
  /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx.h \
  /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/CMSIS/Inc/stm32f0xx.h \
@@ -11,7 +11,7 @@ Drivers/MY/Src/my_stm32f0xx_cortex.o: \
  /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/CMSIS/Inc/core_cmFunc.h \
  /home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/CMSIS/Inc/system_stm32f0xx.h
 
-/home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_cortex.h:
+/home/megalloid/STM32CubeIDE/STM32F0xx/Drivers/MY/Inc/my_stm32f0xx_dma.h:
 
 /home/megalloid/STM32CubeIDE/STM32F0xx/Template/Inc/main.h:
 

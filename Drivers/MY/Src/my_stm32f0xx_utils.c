@@ -37,7 +37,7 @@ MY_Result_t MY_UTILS_SetBitWithRead(volatile uint32_t *SetToRegister, uint32_t V
 MY_Result_t MY_UTILS_SetBitWithReadToAddress(uint32_t SetToRegister, uint32_t Value)
 {
 	volatile uint32_t tmpreg;
-	volatile uint32_t * register_address = (uint32_t *)SetToRegister;
+	volatile uint32_t* register_address = (uint32_t*)SetToRegister;
 
 	do {
 		*(volatile uint32_t *)register_address |= Value;

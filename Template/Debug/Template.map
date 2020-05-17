@@ -117,6 +117,121 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x30d Drivers/MY/Src/my_stm32f0xx.o
  .debug_macro   0x0000000000000000     0x8d15 Drivers/MY/Src/my_stm32f0xx.o
  .debug_macro   0x0000000000000000       0x3c Drivers/MY/Src/my_stm32f0xx.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .text          0x0000000000000000        0x0 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .data          0x0000000000000000        0x0 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .bss           0x0000000000000000        0x0 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .text.MY_24C0X_Init
+                0x0000000000000000       0xac Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .text.MY_24C0X_WriteByte
+                0x0000000000000000       0x42 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .text.MY_24C0X_ReadByte
+                0x0000000000000000       0x2c Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_info    0x0000000000000000      0xd05 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_abbrev  0x0000000000000000      0x1e4 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_aranges
+                0x0000000000000000       0x30 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_ranges  0x0000000000000000       0x20 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000      0x294 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000      0xa4e Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x6a Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x22 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x40 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x18 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x94 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x3c Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x34 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x16 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x57 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x97 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000      0x330 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0xfd Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x10 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x52 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x1f Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x43 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x20 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000      0x1a3 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x10 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x6a Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x1c Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x52 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x40 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x10 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x40 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0xd7 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x1c Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x3d Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x16 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000      0x145 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x28 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x22 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0xef Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000      0x1df Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x34 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x26 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000      0x30d Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000     0x8d15 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x3c Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x2e Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x22 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x70 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000      0xba3 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000      0x2a1 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000      0x1d2 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_macro   0x0000000000000000       0x70 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_line    0x0000000000000000      0x782 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_str     0x0000000000000000    0x4283a Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .comment       0x0000000000000000       0x7c Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .debug_frame   0x0000000000000000       0x70 Drivers/MY/Src/my_stm32f0xx_24c0x.o
+ .ARM.attributes
+                0x0000000000000000       0x31 Drivers/MY/Src/my_stm32f0xx_24c0x.o
  .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_cortex.o
  .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_cortex.o
  .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_cortex.o
@@ -248,7 +363,8 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x30d Drivers/MY/Src/my_stm32f0xx_cortex.o
  .debug_macro   0x0000000000000000     0x8d15 Drivers/MY/Src/my_stm32f0xx_cortex.o
  .debug_macro   0x0000000000000000       0x3c Drivers/MY/Src/my_stm32f0xx_cortex.o
- .debug_macro   0x0000000000000000       0x22 Drivers/MY/Src/my_stm32f0xx_cortex.o
+ .debug_macro   0x0000000000000000       0x2e Drivers/MY/Src/my_stm32f0xx_cortex.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_delay.o
  .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_delay.o
  .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_delay.o
  .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_delay.o
@@ -333,7 +449,222 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x30d Drivers/MY/Src/my_stm32f0xx_delay.o
  .debug_macro   0x0000000000000000     0x8d15 Drivers/MY/Src/my_stm32f0xx_delay.o
  .debug_macro   0x0000000000000000       0x3c Drivers/MY/Src/my_stm32f0xx_delay.o
- .debug_macro   0x0000000000000000       0x22 Drivers/MY/Src/my_stm32f0xx_delay.o
+ .debug_macro   0x0000000000000000       0x2e Drivers/MY/Src/my_stm32f0xx_delay.o
+ .debug_macro   0x0000000000000000       0x1c Drivers/MY/Src/my_stm32f0xx_delay.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .text          0x0000000000000000        0x0 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .data          0x0000000000000000        0x0 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .bss           0x0000000000000000        0x0 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .bss.MY_INT_DISCO_ButtonPressed
+                0x0000000000000000        0x1 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .text.MY_DISCO_LedInit
+                0x0000000000000000       0x30 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .text.MY_DISCO_ButtonInit
+                0x0000000000000000       0x22 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .text.MY_DISCO_ButtonOnPressed
+                0x0000000000000000       0x38 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .text.MY_DISCO_ButtonOnReleased
+                0x0000000000000000       0x38 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_info    0x0000000000000000      0xab3 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_abbrev  0x0000000000000000      0x1cb Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_aranges
+                0x0000000000000000       0x38 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_ranges  0x0000000000000000       0x28 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000      0x272 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000      0xa4e Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x6a Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x22 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x40 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x18 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x94 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x3c Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x34 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x16 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x57 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x97 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000      0x330 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0xfd Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x10 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x52 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x1f Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x43 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x20 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000      0x1a3 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x10 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x6a Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x1c Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x52 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x40 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x10 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x40 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0xd7 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x1c Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x3d Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x16 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000      0x145 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x28 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x22 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0xef Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000      0x1df Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x34 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x26 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000      0x30d Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000     0x8d15 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x3c Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x2e Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x60 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x22 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000       0x70 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000      0xba3 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_macro   0x0000000000000000      0x2a1 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_line    0x0000000000000000      0x758 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_str     0x0000000000000000    0x41bcc Drivers/MY/Src/my_stm32f0xx_disco.o
+ .comment       0x0000000000000000       0x7c Drivers/MY/Src/my_stm32f0xx_disco.o
+ .debug_frame   0x0000000000000000       0x88 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .ARM.attributes
+                0x0000000000000000       0x31 Drivers/MY/Src/my_stm32f0xx_disco.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_dma.o
+ .text          0x0000000000000000        0x0 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .data          0x0000000000000000        0x0 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .bss           0x0000000000000000        0x0 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_info    0x0000000000000000      0x8fd Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_abbrev  0x0000000000000000      0x158 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_aranges
+                0x0000000000000000       0x18 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000      0x23b Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000      0xa4e Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x6a Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x22 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x40 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x18 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x94 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x3c Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x34 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x16 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x57 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x97 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000      0x330 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0xfd Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x10 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x52 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x1f Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x43 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x20 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000      0x1a3 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x10 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x6a Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x1c Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x52 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x40 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x10 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x40 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0xd7 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x1c Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x3d Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x16 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000      0x145 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x28 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x22 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0xef Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000      0x1df Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x34 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x26 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000      0x30d Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000     0x8d15 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x3c Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x2e Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_macro   0x0000000000000000       0x81 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_line    0x0000000000000000      0x6a7 Drivers/MY/Src/my_stm32f0xx_dma.o
+ .debug_str     0x0000000000000000    0x3a4cd Drivers/MY/Src/my_stm32f0xx_dma.o
+ .comment       0x0000000000000000       0x7c Drivers/MY/Src/my_stm32f0xx_dma.o
+ .ARM.attributes
+                0x0000000000000000       0x31 Drivers/MY/Src/my_stm32f0xx_dma.o
  .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_gpio.o
  .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_gpio.o
  .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_gpio.o
@@ -450,10 +781,16 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x30d Drivers/MY/Src/my_stm32f0xx_gpio.o
  .debug_macro   0x0000000000000000     0x8d15 Drivers/MY/Src/my_stm32f0xx_gpio.o
  .debug_macro   0x0000000000000000       0x3c Drivers/MY/Src/my_stm32f0xx_gpio.o
+ .debug_macro   0x0000000000000000       0x2e Drivers/MY/Src/my_stm32f0xx_gpio.o
  .debug_macro   0x0000000000000000       0x22 Drivers/MY/Src/my_stm32f0xx_gpio.o
- .debug_macro   0x0000000000000000       0x22 Drivers/MY/Src/my_stm32f0xx_gpio.o
+ .debug_macro   0x0000000000000000       0x70 Drivers/MY/Src/my_stm32f0xx_gpio.o
  .debug_macro   0x0000000000000000      0xba3 Drivers/MY/Src/my_stm32f0xx_gpio.o
  .debug_macro   0x0000000000000000      0x2a1 Drivers/MY/Src/my_stm32f0xx_gpio.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_i2c.o
  .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_i2c.o
  .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_i2c.o
  .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_i2c.o
@@ -498,11 +835,54 @@ Discarded input sections
  .text          0x0000000000000000        0x0 Drivers/MY/Src/my_stm32f0xx_i2c.o
  .data          0x0000000000000000        0x0 Drivers/MY/Src/my_stm32f0xx_i2c.o
  .bss           0x0000000000000000        0x0 Drivers/MY/Src/my_stm32f0xx_i2c.o
- .debug_info    0x0000000000000000      0x8fd Drivers/MY/Src/my_stm32f0xx_i2c.o
- .debug_abbrev  0x0000000000000000      0x158 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .data.I2C1Handler
+                0x0000000000000000       0x50 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .data.I2C2Handler
+                0x0000000000000000       0x50 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C_GetHandler
+                0x0000000000000000       0x3c Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C_Init
+                0x0000000000000000      0x1f0 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C_IsDeviceReady
+                0x0000000000000000      0x1dc Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C_ReadByte
+                0x0000000000000000       0x7e Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C_Master_Transmit
+                0x0000000000000000      0x224 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C_TransferConfig
+                0x0000000000000000       0x6c Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C_Master_Receive
+                0x0000000000000000      0x224 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C_WaitOnFlagUntilTimeout
+                0x0000000000000000       0x70 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C_WaitOnTXISFlagUntilTimeout
+                0x0000000000000000       0x7c Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C_WaitOnRXNEFlagUntilTimeout
+                0x0000000000000000       0xbc Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C_IsAcknowledgeFailed
+                0x0000000000000000       0xb8 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C_WaitOnSTOPFlagUntilTimeout
+                0x0000000000000000       0x76 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C_Flush_TXDR
+                0x0000000000000000       0x44 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C_ConfigFilters
+                0x0000000000000000       0x30 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C_AcknowledgeNextData
+                0x0000000000000000       0x28 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C_GetError
+                0x0000000000000000       0x14 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C_Write
+                0x0000000000000000       0x6e Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C1_INT_InitPins
+                0x0000000000000000       0x64 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .text.MY_I2C2_INT_InitPins
+                0x0000000000000000       0x68 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .debug_info    0x0000000000000000     0x1436 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .debug_abbrev  0x0000000000000000      0x28f Drivers/MY/Src/my_stm32f0xx_i2c.o
  .debug_aranges
-                0x0000000000000000       0x18 Drivers/MY/Src/my_stm32f0xx_i2c.o
- .debug_macro   0x0000000000000000      0x236 Drivers/MY/Src/my_stm32f0xx_i2c.o
+                0x0000000000000000       0xb0 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .debug_ranges  0x0000000000000000       0xa0 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .debug_macro   0x0000000000000000      0x27e Drivers/MY/Src/my_stm32f0xx_i2c.o
  .debug_macro   0x0000000000000000      0xa4e Drivers/MY/Src/my_stm32f0xx_i2c.o
  .debug_macro   0x0000000000000000       0x6a Drivers/MY/Src/my_stm32f0xx_i2c.o
  .debug_macro   0x0000000000000000       0x22 Drivers/MY/Src/my_stm32f0xx_i2c.o
@@ -543,10 +923,16 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x30d Drivers/MY/Src/my_stm32f0xx_i2c.o
  .debug_macro   0x0000000000000000     0x8d15 Drivers/MY/Src/my_stm32f0xx_i2c.o
  .debug_macro   0x0000000000000000       0x3c Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .debug_macro   0x0000000000000000       0x2e Drivers/MY/Src/my_stm32f0xx_i2c.o
  .debug_macro   0x0000000000000000       0x22 Drivers/MY/Src/my_stm32f0xx_i2c.o
- .debug_line    0x0000000000000000      0x6a7 Drivers/MY/Src/my_stm32f0xx_i2c.o
- .debug_str     0x0000000000000000    0x3a09e Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .debug_macro   0x0000000000000000       0x70 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .debug_macro   0x0000000000000000      0xba3 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .debug_macro   0x0000000000000000      0x2a1 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .debug_macro   0x0000000000000000      0x1d2 Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .debug_line    0x0000000000000000      0xa2d Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .debug_str     0x0000000000000000    0x428d7 Drivers/MY/Src/my_stm32f0xx_i2c.o
  .comment       0x0000000000000000       0x7c Drivers/MY/Src/my_stm32f0xx_i2c.o
+ .debug_frame   0x0000000000000000      0x274 Drivers/MY/Src/my_stm32f0xx_i2c.o
  .ARM.attributes
                 0x0000000000000000       0x31 Drivers/MY/Src/my_stm32f0xx_i2c.o
  .group         0x0000000000000000        0xc Drivers/MY/Src/my_stm32f0xx_rcc.o
@@ -655,7 +1041,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x30d Drivers/MY/Src/my_stm32f0xx_rcc.o
  .debug_macro   0x0000000000000000     0x8d15 Drivers/MY/Src/my_stm32f0xx_rcc.o
  .debug_macro   0x0000000000000000       0x3c Drivers/MY/Src/my_stm32f0xx_rcc.o
- .debug_macro   0x0000000000000000       0x22 Drivers/MY/Src/my_stm32f0xx_rcc.o
+ .debug_macro   0x0000000000000000       0x2e Drivers/MY/Src/my_stm32f0xx_rcc.o
  .debug_macro   0x0000000000000000       0x22 Drivers/MY/Src/my_stm32f0xx_rcc.o
  .debug_macro   0x0000000000000000       0x70 Drivers/MY/Src/my_stm32f0xx_rcc.o
  .debug_macro   0x0000000000000000      0x2a1 Drivers/MY/Src/my_stm32f0xx_rcc.o
@@ -751,7 +1137,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x30d Drivers/MY/Src/my_stm32f0xx_utils.o
  .debug_macro   0x0000000000000000     0x8d15 Drivers/MY/Src/my_stm32f0xx_utils.o
  .debug_macro   0x0000000000000000       0x3c Drivers/MY/Src/my_stm32f0xx_utils.o
- .debug_macro   0x0000000000000000       0x22 Drivers/MY/Src/my_stm32f0xx_utils.o
+ .debug_macro   0x0000000000000000       0x2e Drivers/MY/Src/my_stm32f0xx_utils.o
  .debug_macro   0x0000000000000000       0x6a Drivers/MY/Src/my_stm32f0xx_utils.o
  .group         0x0000000000000000        0xc Src/interrupt_handlers.o
  .group         0x0000000000000000        0xc Src/interrupt_handlers.o
@@ -841,7 +1227,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x30d Src/interrupt_handlers.o
  .debug_macro   0x0000000000000000     0x8d15 Src/interrupt_handlers.o
  .debug_macro   0x0000000000000000       0x3c Src/interrupt_handlers.o
- .debug_macro   0x0000000000000000       0x22 Src/interrupt_handlers.o
+ .debug_macro   0x0000000000000000       0x2e Src/interrupt_handlers.o
  .debug_macro   0x0000000000000000       0x22 Src/interrupt_handlers.o
  .debug_macro   0x0000000000000000       0x70 Src/interrupt_handlers.o
  .debug_macro   0x0000000000000000      0x2a1 Src/interrupt_handlers.o
@@ -934,7 +1320,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x30d Src/main.o
  .debug_macro   0x0000000000000000     0x8d15 Src/main.o
  .debug_macro   0x0000000000000000       0x3c Src/main.o
- .debug_macro   0x0000000000000000       0x22 Src/main.o
+ .debug_macro   0x0000000000000000       0x2e Src/main.o
  .debug_macro   0x0000000000000000       0x22 Src/main.o
  .debug_macro   0x0000000000000000       0x70 Src/main.o
  .debug_macro   0x0000000000000000      0xba3 Src/main.o
@@ -1211,8 +1597,11 @@ LOAD /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.g
 LOAD /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
 LOAD Drivers/CMSIS/Src/system_stm32f0xx.o
 LOAD Drivers/MY/Src/my_stm32f0xx.o
+LOAD Drivers/MY/Src/my_stm32f0xx_24c0x.o
 LOAD Drivers/MY/Src/my_stm32f0xx_cortex.o
 LOAD Drivers/MY/Src/my_stm32f0xx_delay.o
+LOAD Drivers/MY/Src/my_stm32f0xx_disco.o
+LOAD Drivers/MY/Src/my_stm32f0xx_dma.o
 LOAD Drivers/MY/Src/my_stm32f0xx_gpio.o
 LOAD Drivers/MY/Src/my_stm32f0xx_i2c.o
 LOAD Drivers/MY/Src/my_stm32f0xx_rcc.o
@@ -1253,7 +1642,7 @@ LOAD /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.g
                 0x0000000008000000                g_pfnVectors
                 0x00000000080000c0                . = ALIGN (0x4)
 
-.text           0x00000000080000c0     0x13a4
+.text           0x00000000080000c0     0x13a0
                 0x00000000080000c0                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000080000c0       0x48 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
@@ -1295,184 +1684,183 @@ LOAD /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.g
                 0x0000000008000520       0x26 Drivers/MY/Src/my_stm32f0xx_cortex.o
                 0x0000000008000520                MY_NVIC_Priority_Set
  .text.MY_Delay_ms
-                0x0000000008000546       0x30 Drivers/MY/Src/my_stm32f0xx_delay.o
+                0x0000000008000546       0x2e Drivers/MY/Src/my_stm32f0xx_delay.o
                 0x0000000008000546                MY_Delay_ms
  .text.MY_GPIO_Init
-                0x0000000008000576       0x5e Drivers/MY/Src/my_stm32f0xx_gpio.o
-                0x0000000008000576                MY_GPIO_Init
+                0x0000000008000574       0x5e Drivers/MY/Src/my_stm32f0xx_gpio.o
+                0x0000000008000574                MY_GPIO_Init
  .text.MY_GPIO_StructInit
-                0x00000000080005d4      0x192 Drivers/MY/Src/my_stm32f0xx_gpio.o
-                0x00000000080005d4                MY_GPIO_StructInit
- *fill*         0x0000000008000766        0x2 
+                0x00000000080005d2      0x192 Drivers/MY/Src/my_stm32f0xx_gpio.o
+                0x00000000080005d2                MY_GPIO_StructInit
  .text.MY_GPIO_EnableClock
-                0x0000000008000768       0x4c Drivers/MY/Src/my_stm32f0xx_gpio.o
-                0x0000000008000768                MY_GPIO_EnableClock
+                0x0000000008000764       0x4c Drivers/MY/Src/my_stm32f0xx_gpio.o
+                0x0000000008000764                MY_GPIO_EnableClock
  .text.MY_GPIO_GetPortSource
-                0x00000000080007b4       0x1e Drivers/MY/Src/my_stm32f0xx_gpio.o
-                0x00000000080007b4                MY_GPIO_GetPortSource
- *fill*         0x00000000080007d2        0x2 
+                0x00000000080007b0       0x1e Drivers/MY/Src/my_stm32f0xx_gpio.o
+                0x00000000080007b0                MY_GPIO_GetPortSource
+ *fill*         0x00000000080007ce        0x2 
  .text.MY_GPIO_INT_Init
-                0x00000000080007d4      0x15c Drivers/MY/Src/my_stm32f0xx_gpio.o
+                0x00000000080007d0      0x15c Drivers/MY/Src/my_stm32f0xx_gpio.o
  .text.MY_RCC_System_Init
-                0x0000000008000930       0xae Drivers/MY/Src/my_stm32f0xx_rcc.o
-                0x0000000008000930                MY_RCC_System_Init
- *fill*         0x00000000080009de        0x2 
+                0x000000000800092c       0xae Drivers/MY/Src/my_stm32f0xx_rcc.o
+                0x000000000800092c                MY_RCC_System_Init
+ *fill*         0x00000000080009da        0x2 
  .text.MY_RCC_System_DeInit
-                0x00000000080009e0       0x70 Drivers/MY/Src/my_stm32f0xx_rcc.o
-                0x00000000080009e0                MY_RCC_System_DeInit
+                0x00000000080009dc       0x70 Drivers/MY/Src/my_stm32f0xx_rcc.o
+                0x00000000080009dc                MY_RCC_System_DeInit
  .text.MY_RCC_Osc_Config
-                0x0000000008000a50      0x5e0 Drivers/MY/Src/my_stm32f0xx_rcc.o
-                0x0000000008000a50                MY_RCC_Osc_Config
+                0x0000000008000a4c      0x5e0 Drivers/MY/Src/my_stm32f0xx_rcc.o
+                0x0000000008000a4c                MY_RCC_Osc_Config
  .text.MY_RCC_Clock_Config
-                0x0000000008001030      0x1d0 Drivers/MY/Src/my_stm32f0xx_rcc.o
-                0x0000000008001030                MY_RCC_Clock_Config
+                0x000000000800102c      0x1d0 Drivers/MY/Src/my_stm32f0xx_rcc.o
+                0x000000000800102c                MY_RCC_Clock_Config
  .text.MY_RCC_SysClock_GetFreq
-                0x0000000008001200       0xc8 Drivers/MY/Src/my_stm32f0xx_rcc.o
-                0x0000000008001200                MY_RCC_SysClock_GetFreq
+                0x00000000080011fc       0xc8 Drivers/MY/Src/my_stm32f0xx_rcc.o
+                0x00000000080011fc                MY_RCC_SysClock_GetFreq
  .text.MY_RCC_HCLK_GetFreq
-                0x00000000080012c8       0x14 Drivers/MY/Src/my_stm32f0xx_rcc.o
-                0x00000000080012c8                MY_RCC_HCLK_GetFreq
+                0x00000000080012c4       0x14 Drivers/MY/Src/my_stm32f0xx_rcc.o
+                0x00000000080012c4                MY_RCC_HCLK_GetFreq
  .text.MY_UTILS_SetBitWithRead
-                0x00000000080012dc       0x36 Drivers/MY/Src/my_stm32f0xx_utils.o
-                0x00000000080012dc                MY_UTILS_SetBitWithRead
- *fill*         0x0000000008001312        0x2 
+                0x00000000080012d8       0x36 Drivers/MY/Src/my_stm32f0xx_utils.o
+                0x00000000080012d8                MY_UTILS_SetBitWithRead
+ *fill*         0x000000000800130e        0x2 
  .text.NMI_Handler
-                0x0000000008001314       0x24 Src/interrupt_handlers.o
-                0x0000000008001314                NMI_Handler
+                0x0000000008001310       0x24 Src/interrupt_handlers.o
+                0x0000000008001310                NMI_Handler
  .text.HardFault_Handler
-                0x0000000008001338        0x6 Src/interrupt_handlers.o
-                0x0000000008001338                HardFault_Handler
+                0x0000000008001334        0x6 Src/interrupt_handlers.o
+                0x0000000008001334                HardFault_Handler
  .text.SVC_Handler
-                0x000000000800133e        0xa Src/interrupt_handlers.o
-                0x000000000800133e                SVC_Handler
+                0x000000000800133a        0xa Src/interrupt_handlers.o
+                0x000000000800133a                SVC_Handler
  .text.PendSV_Handler
-                0x0000000008001348        0xa Src/interrupt_handlers.o
-                0x0000000008001348                PendSV_Handler
+                0x0000000008001344        0xa Src/interrupt_handlers.o
+                0x0000000008001344                PendSV_Handler
  .text.SysTick_Handler
-                0x0000000008001352        0xe Src/interrupt_handlers.o
-                0x0000000008001352                SysTick_Handler
- .text.main     0x0000000008001360       0x50 Src/main.o
-                0x0000000008001360                main
+                0x000000000800134e        0xe Src/interrupt_handlers.o
+                0x000000000800134e                SysTick_Handler
+ .text.main     0x000000000800135c       0x50 Src/main.o
+                0x000000000800135c                main
  .text.Reset_Handler
-                0x00000000080013b0       0x50 Startup/startup_stm32f051r8tx.o
-                0x00000000080013b0                Reset_Handler
+                0x00000000080013ac       0x50 Startup/startup_stm32f051r8tx.o
+                0x00000000080013ac                Reset_Handler
  .text.Default_Handler
-                0x0000000008001400        0x2 Startup/startup_stm32f051r8tx.o
-                0x0000000008001400                DMA1_CH4_5_6_7_DMA2_CH3_4_5_IRQHandler
-                0x0000000008001400                TIM1_CC_IRQHandler
-                0x0000000008001400                TSC_IRQHandler
-                0x0000000008001400                PVD_IRQHandler
-                0x0000000008001400                I2C1_IRQHandler
-                0x0000000008001400                RCC_CRS_IRQHandler
-                0x0000000008001400                SPI1_IRQHandler
-                0x0000000008001400                TIM6_DAC_IRQHandler
-                0x0000000008001400                EXTI2_3_IRQHandler
-                0x0000000008001400                I2C2_IRQHandler
-                0x0000000008001400                TIM17_IRQHandler
-                0x0000000008001400                CEC_CAN_IRQHandler
-                0x0000000008001400                RTC_IRQHandler
-                0x0000000008001400                TIM16_IRQHandler
-                0x0000000008001400                TIM3_IRQHandler
-                0x0000000008001400                EXTI4_15_IRQHandler
-                0x0000000008001400                Default_Handler
-                0x0000000008001400                DMA1_CH2_3_DMA2_CH1_2_IRQHandler
-                0x0000000008001400                TIM14_IRQHandler
-                0x0000000008001400                TIM7_IRQHandler
-                0x0000000008001400                TIM15_IRQHandler
-                0x0000000008001400                EXTI0_1_IRQHandler
-                0x0000000008001400                USB_IRQHandler
-                0x0000000008001400                SPI2_IRQHandler
-                0x0000000008001400                DMA1_CH1_IRQHandler
-                0x0000000008001400                WWDG_IRQHandler
-                0x0000000008001400                TIM2_IRQHandler
-                0x0000000008001400                ADC_COMP_IRQHandler
-                0x0000000008001400                USART2_IRQHandler
-                0x0000000008001400                USART3_4_5_6_7_8_IRQHandler
-                0x0000000008001400                FLASH_IRQHandler
-                0x0000000008001400                USART1_IRQHandler
-                0x0000000008001400                TIM1_BRK_UP_TRG_COM_IRQHandler
- *fill*         0x0000000008001402        0x2 
+                0x00000000080013fc        0x2 Startup/startup_stm32f051r8tx.o
+                0x00000000080013fc                DMA1_CH4_5_6_7_DMA2_CH3_4_5_IRQHandler
+                0x00000000080013fc                TIM1_CC_IRQHandler
+                0x00000000080013fc                TSC_IRQHandler
+                0x00000000080013fc                PVD_IRQHandler
+                0x00000000080013fc                I2C1_IRQHandler
+                0x00000000080013fc                RCC_CRS_IRQHandler
+                0x00000000080013fc                SPI1_IRQHandler
+                0x00000000080013fc                TIM6_DAC_IRQHandler
+                0x00000000080013fc                EXTI2_3_IRQHandler
+                0x00000000080013fc                I2C2_IRQHandler
+                0x00000000080013fc                TIM17_IRQHandler
+                0x00000000080013fc                CEC_CAN_IRQHandler
+                0x00000000080013fc                RTC_IRQHandler
+                0x00000000080013fc                TIM16_IRQHandler
+                0x00000000080013fc                TIM3_IRQHandler
+                0x00000000080013fc                EXTI4_15_IRQHandler
+                0x00000000080013fc                Default_Handler
+                0x00000000080013fc                DMA1_CH2_3_DMA2_CH1_2_IRQHandler
+                0x00000000080013fc                TIM14_IRQHandler
+                0x00000000080013fc                TIM7_IRQHandler
+                0x00000000080013fc                TIM15_IRQHandler
+                0x00000000080013fc                EXTI0_1_IRQHandler
+                0x00000000080013fc                USB_IRQHandler
+                0x00000000080013fc                SPI2_IRQHandler
+                0x00000000080013fc                DMA1_CH1_IRQHandler
+                0x00000000080013fc                WWDG_IRQHandler
+                0x00000000080013fc                TIM2_IRQHandler
+                0x00000000080013fc                ADC_COMP_IRQHandler
+                0x00000000080013fc                USART2_IRQHandler
+                0x00000000080013fc                USART3_4_5_6_7_8_IRQHandler
+                0x00000000080013fc                FLASH_IRQHandler
+                0x00000000080013fc                USART1_IRQHandler
+                0x00000000080013fc                TIM1_BRK_UP_TRG_COM_IRQHandler
+ *fill*         0x00000000080013fe        0x2 
  .text.__libc_init_array
-                0x0000000008001404       0x48 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
-                0x0000000008001404                __libc_init_array
+                0x0000000008001400       0x48 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+                0x0000000008001400                __libc_init_array
  *(.glue_7)
- .glue_7        0x000000000800144c        0x0 linker stubs
+ .glue_7        0x0000000008001448        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x000000000800144c        0x0 linker stubs
+ .glue_7t       0x0000000008001448        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x000000000800144c        0x0 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+ .eh_frame      0x0000000008001448        0x0 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
  *(.init)
- .init          0x000000000800144c        0x4 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
-                0x000000000800144c                _init
- .init          0x0000000008001450        0x8 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
+ .init          0x0000000008001448        0x4 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
+                0x0000000008001448                _init
+ .init          0x000000000800144c        0x8 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
  *(.fini)
- .fini          0x0000000008001458        0x4 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
-                0x0000000008001458                _fini
- .fini          0x000000000800145c        0x8 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
-                0x0000000008001464                . = ALIGN (0x4)
-                0x0000000008001464                _etext = .
+ .fini          0x0000000008001454        0x4 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
+                0x0000000008001454                _fini
+ .fini          0x0000000008001458        0x8 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
+                0x0000000008001460                . = ALIGN (0x4)
+                0x0000000008001460                _etext = .
 
-.vfp11_veneer   0x0000000008001464        0x0
- .vfp11_veneer  0x0000000008001464        0x0 linker stubs
+.vfp11_veneer   0x0000000008001460        0x0
+ .vfp11_veneer  0x0000000008001460        0x0 linker stubs
 
-.v4_bx          0x0000000008001464        0x0
- .v4_bx         0x0000000008001464        0x0 linker stubs
+.v4_bx          0x0000000008001460        0x0
+ .v4_bx         0x0000000008001460        0x0 linker stubs
 
-.iplt           0x0000000008001464        0x0
- .iplt          0x0000000008001464        0x0 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+.iplt           0x0000000008001460        0x0
+ .iplt          0x0000000008001460        0x0 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
 
-.rodata         0x0000000008001464       0x30
-                0x0000000008001464                . = ALIGN (0x4)
+.rodata         0x0000000008001460       0x30
+                0x0000000008001460                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x0000000008001464       0x20 Drivers/MY/Src/my_stm32f0xx_rcc.o
+ .rodata        0x0000000008001460       0x20 Drivers/MY/Src/my_stm32f0xx_rcc.o
  *(.rodata*)
  .rodata.AHBPrescTable
-                0x0000000008001484       0x10 Drivers/CMSIS/Src/system_stm32f0xx.o
-                0x0000000008001484                AHBPrescTable
-                0x0000000008001494                . = ALIGN (0x4)
+                0x0000000008001480       0x10 Drivers/CMSIS/Src/system_stm32f0xx.o
+                0x0000000008001480                AHBPrescTable
+                0x0000000008001490                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000008001494        0x0
- .rel.iplt      0x0000000008001494        0x0 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+.rel.dyn        0x0000000008001490        0x0
+ .rel.iplt      0x0000000008001490        0x0 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
 
-.ARM.extab      0x0000000008001494        0x0
-                0x0000000008001494                . = ALIGN (0x4)
+.ARM.extab      0x0000000008001490        0x0
+                0x0000000008001490                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000008001494                . = ALIGN (0x4)
+                0x0000000008001490                . = ALIGN (0x4)
 
-.ARM            0x0000000008001494        0x0
-                0x0000000008001494                . = ALIGN (0x4)
-                0x0000000008001494                __exidx_start = .
+.ARM            0x0000000008001490        0x0
+                0x0000000008001490                . = ALIGN (0x4)
+                0x0000000008001490                __exidx_start = .
  *(.ARM.exidx*)
-                0x0000000008001494                __exidx_end = .
-                0x0000000008001494                . = ALIGN (0x4)
+                0x0000000008001490                __exidx_end = .
+                0x0000000008001490                . = ALIGN (0x4)
 
-.preinit_array  0x0000000008001494        0x0
-                0x0000000008001494                . = ALIGN (0x4)
-                0x0000000008001494                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000008001490        0x0
+                0x0000000008001490                . = ALIGN (0x4)
+                0x0000000008001490                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0000000008001494                PROVIDE (__preinit_array_end = .)
-                0x0000000008001494                . = ALIGN (0x4)
+                0x0000000008001490                PROVIDE (__preinit_array_end = .)
+                0x0000000008001490                . = ALIGN (0x4)
 
-.init_array     0x0000000008001494        0x4
-                0x0000000008001494                . = ALIGN (0x4)
-                0x0000000008001494                PROVIDE (__init_array_start = .)
+.init_array     0x0000000008001490        0x4
+                0x0000000008001490                . = ALIGN (0x4)
+                0x0000000008001490                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0000000008001494        0x4 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
-                0x0000000008001498                PROVIDE (__init_array_end = .)
-                0x0000000008001498                . = ALIGN (0x4)
+ .init_array    0x0000000008001490        0x4 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+                0x0000000008001494                PROVIDE (__init_array_end = .)
+                0x0000000008001494                . = ALIGN (0x4)
 
-.fini_array     0x0000000008001498        0x4
-                0x0000000008001498                . = ALIGN (0x4)
+.fini_array     0x0000000008001494        0x4
+                0x0000000008001494                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008001498        0x4 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+ .fini_array    0x0000000008001494        0x4 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x000000000800149c                . = ALIGN (0x4)
-                0x000000000800149c                _sidata = LOADADDR (.data)
+                0x0000000008001498                . = ALIGN (0x4)
+                0x0000000008001498                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000        0x4 load address 0x000000000800149c
+.data           0x0000000020000000        0x4 load address 0x0000000008001498
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -1483,11 +1871,11 @@ LOAD /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.g
                 0x0000000020000004                . = ALIGN (0x4)
                 0x0000000020000004                _edata = .
 
-.igot.plt       0x0000000020000004        0x0 load address 0x00000000080014a0
+.igot.plt       0x0000000020000004        0x0 load address 0x000000000800149c
  .igot.plt      0x0000000020000004        0x0 /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
                 0x0000000020000004                . = ALIGN (0x4)
 
-.bss            0x0000000020000004       0x2c load address 0x00000000080014a0
+.bss            0x0000000020000004       0x2c load address 0x000000000800149c
                 0x0000000020000004                _sbss = .
                 0x0000000020000004                __bss_start__ = _sbss
  *(.bss)
@@ -1504,7 +1892,7 @@ LOAD /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.g
                 0x0000000020000030                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x0000000020000030      0x600 load address 0x00000000080014a0
+                0x0000000020000030      0x600 load address 0x000000000800149c
                 0x0000000020000030                . = ALIGN (0x8)
                 0x0000000020000030                PROVIDE (end = .)
                 [!provide]                        PROVIDE (_end = .)
@@ -1556,29 +1944,29 @@ LOAD /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.g
                 0x000000000000028c       0x1e /opt/st/stm32cubeide_1.0.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
 OUTPUT(Template.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000     0x699a
+.debug_info     0x0000000000000000     0x6972
  .debug_info    0x0000000000000000      0x247 Drivers/CMSIS/Src/system_stm32f0xx.o
  .debug_info    0x0000000000000247      0xc3c Drivers/MY/Src/my_stm32f0xx.o
  .debug_info    0x0000000000000e83     0x1042 Drivers/MY/Src/my_stm32f0xx_cortex.o
- .debug_info    0x0000000000001ec5      0x957 Drivers/MY/Src/my_stm32f0xx_delay.o
- .debug_info    0x000000000000281c     0x1169 Drivers/MY/Src/my_stm32f0xx_gpio.o
- .debug_info    0x0000000000003985     0x10b5 Drivers/MY/Src/my_stm32f0xx_rcc.o
- .debug_info    0x0000000000004a3a      0xa4c Drivers/MY/Src/my_stm32f0xx_utils.o
- .debug_info    0x0000000000005486      0xa2a Src/interrupt_handlers.o
- .debug_info    0x0000000000005eb0      0xac8 Src/main.o
- .debug_info    0x0000000000006978       0x22 Startup/startup_stm32f051r8tx.o
+ .debug_info    0x0000000000001ec5      0x946 Drivers/MY/Src/my_stm32f0xx_delay.o
+ .debug_info    0x000000000000280b     0x1169 Drivers/MY/Src/my_stm32f0xx_gpio.o
+ .debug_info    0x0000000000003974     0x10b5 Drivers/MY/Src/my_stm32f0xx_rcc.o
+ .debug_info    0x0000000000004a29      0xa4c Drivers/MY/Src/my_stm32f0xx_utils.o
+ .debug_info    0x0000000000005475      0xa2a Src/interrupt_handlers.o
+ .debug_info    0x0000000000005e9f      0xab1 Src/main.o
+ .debug_info    0x0000000000006950       0x22 Startup/startup_stm32f051r8tx.o
 
-.debug_abbrev   0x0000000000000000     0x122b
+.debug_abbrev   0x0000000000000000     0x11f4
  .debug_abbrev  0x0000000000000000      0x100 Drivers/CMSIS/Src/system_stm32f0xx.o
  .debug_abbrev  0x0000000000000100      0x1be Drivers/MY/Src/my_stm32f0xx.o
  .debug_abbrev  0x00000000000002be      0x2f1 Drivers/MY/Src/my_stm32f0xx_cortex.o
- .debug_abbrev  0x00000000000005af      0x1b1 Drivers/MY/Src/my_stm32f0xx_delay.o
- .debug_abbrev  0x0000000000000760      0x2b4 Drivers/MY/Src/my_stm32f0xx_gpio.o
- .debug_abbrev  0x0000000000000a14      0x2c2 Drivers/MY/Src/my_stm32f0xx_rcc.o
- .debug_abbrev  0x0000000000000cd6      0x1d1 Drivers/MY/Src/my_stm32f0xx_utils.o
- .debug_abbrev  0x0000000000000ea7      0x1a0 Src/interrupt_handlers.o
- .debug_abbrev  0x0000000000001047      0x1d2 Src/main.o
- .debug_abbrev  0x0000000000001219       0x12 Startup/startup_stm32f051r8tx.o
+ .debug_abbrev  0x00000000000005af      0x199 Drivers/MY/Src/my_stm32f0xx_delay.o
+ .debug_abbrev  0x0000000000000748      0x2b4 Drivers/MY/Src/my_stm32f0xx_gpio.o
+ .debug_abbrev  0x00000000000009fc      0x2c2 Drivers/MY/Src/my_stm32f0xx_rcc.o
+ .debug_abbrev  0x0000000000000cbe      0x1d1 Drivers/MY/Src/my_stm32f0xx_utils.o
+ .debug_abbrev  0x0000000000000e8f      0x1a0 Src/interrupt_handlers.o
+ .debug_abbrev  0x000000000000102f      0x1b3 Src/main.o
+ .debug_abbrev  0x00000000000011e2       0x12 Startup/startup_stm32f051r8tx.o
 
 .debug_aranges  0x0000000000000000      0x380
  .debug_aranges
@@ -1614,7 +2002,7 @@ OUTPUT(Template.elf elf32-littlearm)
  .debug_ranges  0x00000000000002b8       0x10 Src/main.o
  .debug_ranges  0x00000000000002c8       0x20 Startup/startup_stm32f051r8tx.o
 
-.debug_macro    0x0000000000000000     0xcfe8
+.debug_macro    0x0000000000000000     0xcf9d
  .debug_macro   0x0000000000000000       0xda Drivers/CMSIS/Src/system_stm32f0xx.o
  .debug_macro   0x00000000000000da      0xa4e Drivers/CMSIS/Src/system_stm32f0xx.o
  .debug_macro   0x0000000000000b28       0x6a Drivers/CMSIS/Src/system_stm32f0xx.o
@@ -1660,53 +2048,52 @@ OUTPUT(Template.elf elf32-littlearm)
  .debug_macro   0x000000000000ae92       0x16 Drivers/MY/Src/my_stm32f0xx.o
  .debug_macro   0x000000000000aea8      0x145 Drivers/MY/Src/my_stm32f0xx.o
  .debug_macro   0x000000000000afed       0x28 Drivers/MY/Src/my_stm32f0xx.o
- .debug_macro   0x000000000000b015       0x22 Drivers/MY/Src/my_stm32f0xx.o
- .debug_macro   0x000000000000b037       0x6a Drivers/MY/Src/my_stm32f0xx.o
- .debug_macro   0x000000000000b0a1       0x22 Drivers/MY/Src/my_stm32f0xx.o
- .debug_macro   0x000000000000b0c3      0x2a1 Drivers/MY/Src/my_stm32f0xx.o
- .debug_macro   0x000000000000b364      0xba3 Drivers/MY/Src/my_stm32f0xx.o
- .debug_macro   0x000000000000bf07      0x23b Drivers/MY/Src/my_stm32f0xx_cortex.o
- .debug_macro   0x000000000000c142       0x1c Drivers/MY/Src/my_stm32f0xx_cortex.o
- .debug_macro   0x000000000000c15e      0x236 Drivers/MY/Src/my_stm32f0xx_delay.o
- .debug_macro   0x000000000000c394      0x263 Drivers/MY/Src/my_stm32f0xx_gpio.o
- .debug_macro   0x000000000000c5f7       0x70 Drivers/MY/Src/my_stm32f0xx_gpio.o
- .debug_macro   0x000000000000c667      0x265 Drivers/MY/Src/my_stm32f0xx_rcc.o
- .debug_macro   0x000000000000c8cc      0x23b Drivers/MY/Src/my_stm32f0xx_utils.o
- .debug_macro   0x000000000000cb07      0x27a Src/interrupt_handlers.o
- .debug_macro   0x000000000000cd81      0x267 Src/main.o
+ .debug_macro   0x000000000000b015       0x2e Drivers/MY/Src/my_stm32f0xx.o
+ .debug_macro   0x000000000000b043       0x6a Drivers/MY/Src/my_stm32f0xx.o
+ .debug_macro   0x000000000000b0ad       0x22 Drivers/MY/Src/my_stm32f0xx.o
+ .debug_macro   0x000000000000b0cf      0x2a1 Drivers/MY/Src/my_stm32f0xx.o
+ .debug_macro   0x000000000000b370      0xba3 Drivers/MY/Src/my_stm32f0xx.o
+ .debug_macro   0x000000000000bf13      0x23b Drivers/MY/Src/my_stm32f0xx_cortex.o
+ .debug_macro   0x000000000000c14e       0x1c Drivers/MY/Src/my_stm32f0xx_cortex.o
+ .debug_macro   0x000000000000c16a      0x245 Drivers/MY/Src/my_stm32f0xx_delay.o
+ .debug_macro   0x000000000000c3af      0x263 Drivers/MY/Src/my_stm32f0xx_gpio.o
+ .debug_macro   0x000000000000c612      0x265 Drivers/MY/Src/my_stm32f0xx_rcc.o
+ .debug_macro   0x000000000000c877      0x23b Drivers/MY/Src/my_stm32f0xx_utils.o
+ .debug_macro   0x000000000000cab2      0x27a Src/interrupt_handlers.o
+ .debug_macro   0x000000000000cd2c      0x271 Src/main.o
 
-.debug_line     0x0000000000000000     0x4508
+.debug_line     0x0000000000000000     0x4537
  .debug_line    0x0000000000000000      0x4b9 Drivers/CMSIS/Src/system_stm32f0xx.o
  .debug_line    0x00000000000004b9      0x714 Drivers/MY/Src/my_stm32f0xx.o
  .debug_line    0x0000000000000bcd      0x951 Drivers/MY/Src/my_stm32f0xx_cortex.o
- .debug_line    0x000000000000151e      0x6c5 Drivers/MY/Src/my_stm32f0xx_delay.o
- .debug_line    0x0000000000001be3      0x940 Drivers/MY/Src/my_stm32f0xx_gpio.o
- .debug_line    0x0000000000002523      0xa51 Drivers/MY/Src/my_stm32f0xx_rcc.o
- .debug_line    0x0000000000002f74      0x6fc Drivers/MY/Src/my_stm32f0xx_utils.o
- .debug_line    0x0000000000003670      0x731 Src/interrupt_handlers.o
- .debug_line    0x0000000000003da1      0x6e3 Src/main.o
- .debug_line    0x0000000000004484       0x84 Startup/startup_stm32f051r8tx.o
+ .debug_line    0x000000000000151e      0x6de Drivers/MY/Src/my_stm32f0xx_delay.o
+ .debug_line    0x0000000000001bfc      0x940 Drivers/MY/Src/my_stm32f0xx_gpio.o
+ .debug_line    0x000000000000253c      0xa51 Drivers/MY/Src/my_stm32f0xx_rcc.o
+ .debug_line    0x0000000000002f8d      0x6fc Drivers/MY/Src/my_stm32f0xx_utils.o
+ .debug_line    0x0000000000003689      0x731 Src/interrupt_handlers.o
+ .debug_line    0x0000000000003dba      0x6f9 Src/main.o
+ .debug_line    0x00000000000044b3       0x84 Startup/startup_stm32f051r8tx.o
 
-.debug_str      0x0000000000000000    0x42489
+.debug_str      0x0000000000000000    0x4255f
  .debug_str     0x0000000000000000    0x35b25 Drivers/CMSIS/Src/system_stm32f0xx.o
                                       0x35ccc (size before relaxing)
- .debug_str     0x0000000000035b25     0xbc6a Drivers/MY/Src/my_stm32f0xx.o
-                                      0x419bc (size before relaxing)
- .debug_str     0x000000000004178f      0x3c4 Drivers/MY/Src/my_stm32f0xx_cortex.o
-                                      0x3a6b5 (size before relaxing)
- .debug_str     0x0000000000041b53       0x88 Drivers/MY/Src/my_stm32f0xx_delay.o
-                                      0x3a0d9 (size before relaxing)
- .debug_str     0x0000000000041bdb      0x2bf Drivers/MY/Src/my_stm32f0xx_gpio.o
-                                      0x41aa1 (size before relaxing)
- .debug_str     0x0000000000041e9a      0x44b Drivers/MY/Src/my_stm32f0xx_rcc.o
-                                      0x41b7b (size before relaxing)
- .debug_str     0x00000000000422e5       0xdb Drivers/MY/Src/my_stm32f0xx_utils.o
-                                      0x3a4b0 (size before relaxing)
- .debug_str     0x00000000000423c0       0x7b Src/interrupt_handlers.o
-                                      0x416c9 (size before relaxing)
- .debug_str     0x000000000004243b       0x1d Src/main.o
-                                      0x41748 (size before relaxing)
- .debug_str     0x0000000000042458       0x31 Startup/startup_stm32f051r8tx.o
+ .debug_str     0x0000000000035b25     0xbd40 Drivers/MY/Src/my_stm32f0xx.o
+                                      0x41a92 (size before relaxing)
+ .debug_str     0x0000000000041865      0x3c4 Drivers/MY/Src/my_stm32f0xx_cortex.o
+                                      0x3a78b (size before relaxing)
+ .debug_str     0x0000000000041c29       0x88 Drivers/MY/Src/my_stm32f0xx_delay.o
+                                      0x3a25f (size before relaxing)
+ .debug_str     0x0000000000041cb1      0x2bf Drivers/MY/Src/my_stm32f0xx_gpio.o
+                                      0x41b77 (size before relaxing)
+ .debug_str     0x0000000000041f70      0x44b Drivers/MY/Src/my_stm32f0xx_rcc.o
+                                      0x41c51 (size before relaxing)
+ .debug_str     0x00000000000423bb       0xdb Drivers/MY/Src/my_stm32f0xx_utils.o
+                                      0x3a586 (size before relaxing)
+ .debug_str     0x0000000000042496       0x7b Src/interrupt_handlers.o
+                                      0x4179f (size before relaxing)
+ .debug_str     0x0000000000042511       0x1d Src/main.o
+                                      0x4182b (size before relaxing)
+ .debug_str     0x000000000004252e       0x31 Startup/startup_stm32f051r8tx.o
                                          0x67 (size before relaxing)
 
 .comment        0x0000000000000000       0x7b

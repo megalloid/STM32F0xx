@@ -1,0 +1,4 @@
+my_stm32f0xx_disco.c:17:6:MY_DISCO_LedInit	16	static
+my_stm32f0xx_disco.c:27:6:MY_DISCO_ButtonInit	16	static
+my_stm32f0xx_disco.c:34:9:MY_DISCO_ButtonOnPressed	8	static
+my_stm32f0xx_disco.c:59:9:MY_DISCO_ButtonOnReleased	8	static

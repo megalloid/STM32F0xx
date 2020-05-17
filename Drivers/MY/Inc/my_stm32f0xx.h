@@ -103,7 +103,24 @@
 			 * @brief    Библиотечные макросы
 			 * @{
 			 */
+				/* Блокировка структуры. Применяется при использовании RTOS */
+				#define MY_LOCK(__HANDLE__)                 	\
+					  do{                                       \
+						  if((__HANDLE__)->Lock == MY_Lock_On)  \
+						  {                                     \
+							 return MY_Result_Busy;             \
+						  }                                     \
+						  else                                  \
+						  {                                     \
+							 (__HANDLE__)->Lock = MY_Lock_On;   \
+						  }                                     \
+					  } while (0)
 
+				/* Разблокировка структуры. Применяется при использовании RTOS */
+				 #define MY_UNLOCK(__HANDLE__)             			 	\
+					  do{                                       		\
+						  (__HANDLE__)->Lock = MY_Lock_Off;    			\
+					  } while (0)
 			/**
 			 * @}  MY_Macros
 			 */
@@ -125,6 +142,17 @@
 					MY_Result_Timeout  = 0x03U	/*!< Таймаут доступа к объекту действия */
 				}
 				MY_Result_t;
+
+
+				/**
+				 * @brief 	Блокировка доступа
+				 */
+				typedef enum
+				{
+					MY_Lock_On     = 0x00U, 	/*!< Разблокировано  */
+					MY_Lock_Off    = 0x01U		/*!< Заблокировано  */
+				}
+				MY_Lock_t;
 
 			/**
 			 * @} MY_Typedefs

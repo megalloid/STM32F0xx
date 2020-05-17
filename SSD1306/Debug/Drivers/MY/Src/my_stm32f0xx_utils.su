@@ -1,4 +1,0 @@
-my_stm32f0xx_utils.c:13:13:MY_UTILS_SetBitWithRead	24	static
-my_stm32f0xx_utils.c:37:13:MY_UTILS_SetBitWithReadToAddress	24	static
-my_stm32f0xx_utils.c:61:10:MY_UTILS_SwapBytes2	16	static
-my_stm32f0xx_utils.c:67:10:MY_UTILS_SwapBytes4	16	static

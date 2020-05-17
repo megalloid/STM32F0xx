@@ -6,7 +6,7 @@
  * @ide     STM32CubeIDE
  * @brief   Утилиты для работы с временными задержками
  */
-
+#include "my_stm32f0xx_cortex.h"
 #include "my_stm32f0xx_delay.h"
 
 void MY_Delay_ms(__IO uint32_t delay_ms)
